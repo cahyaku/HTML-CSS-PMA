@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMA-Persons Management App</title>
+
+    <!-- ION-ICON -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK CSS FILE -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+
+  <body>
+    <header>
+      <header class="header">
+        <a href="#">
+          <img class="logo" alt="PMA logo" src="img/logo-sma-1-01.svg" />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#profil-sekolah">Home</a></li>
+            <li><a class="main-nav-link" href="#">Feature</a></li>
+            <li><a class="main-nav-link" href="#">About</a></li>
+            <!-- <li><a class="main-nav-link" href="#"></a></li>
+            <li><a class="main-nav-link" href="">About</a></li>
+            <li><a class="main-nav-link nav-cta" href="#"></a></li> -->
+            <li>
+              <a class="footer-link" href="search.html"
+                ><ion-icon class="icon-search" name="search-outline"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </header>
+
+    <main>
+      <!-- dengan bootstrap -->
+      <section class="section-cta">
+        <div class="container">
+          <h2><strong>PMA</strong>- Persons Management App</h2>
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label"
+              >Email</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                readonly
+                class="form-control-plaintext"
+                id="staticEmail"
+                value="email@example.com"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label"
+              >Password</label
+            >
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="login">
+        <!-- LOGIN MEMBER -->
+        <div class="container">
+          <h2><strong>PMA</strong> - Persons Management App</h2>
+          <div class="cta cta-box">
+            <div class="cta-text-box">
+              <h3 class="cta-heading">masuk ke halaman administrasi</h3>
+              <form class="cta-form" action="#">
+                <div>
+                  <label for="name">Email:</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="username"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="password">Password:</label>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="password"
+                    required
+                  />
+                </div>
+                <button class="btn btn--form" href="index.html">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
