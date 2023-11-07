@@ -1,3 +1,10 @@
+/* body {
+  background-image: url(background-img.png);
+  background-size: cover;
+  background-color: #bac8ff;
+  background-color: #edf2ff;
+} */
+
 .logo {
   height: 2.2rem;
 }
@@ -9,4 +16,120 @@
 
 .main-nav {
   opacity: 0;
+}
+
+.cta {
+  box-shadow: 0 2.4rem 1.8rem rgba(0, 0, 0, 0.267);
+  /* background-color: #edf2ff; */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 11px;
+  border-top-left-radius: 11px;
+  overflow: hidden;
+  padding-bottom: 2.4rem;
+  /* background-image: linear-gradient(to right bottom, white, #4c6ef5); */
+}
+
+.cta-text-box {
+  /* padding: 2.4rem 4rem; */
+  padding: 2.4rem 6rem 0rem 1rem;
+}
+
+.cta-heading {
+  /* background-color: #748ffc; */
+  /* background-color: #bac8ff; */
+  /* background-color: #4263eb; */
+  /* background-color: rgba(0, 0, 0, 0.45); */
+  /* background-color: #868e96; */
+  background-color: #3b5bdb;
+  /* background-color: #edf2ff; */
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+.cta-box {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: 1fr 2/-2fr; */
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+  /* margin-bottom: 2rem; */
+  /* margin: 0rem 2rem 2rem 2rem; */
+}
+
+/* .form {
+  grid-column: 1/-1;
+} */
+
+.cta-icon {
+  align-items: center;
+  padding: 1rem;
+  font-size: 10rem;
+  color: #adb5bd;
+  align-self: center;
+}
+
+.PMA {
+  color: #364fc7;
+}
+
+.cta-form {
+  margin-bottom: 2rem;
+  display: grid;
+  row-gap: 2.4rem;
+}
+
+.cta-form input,
+.cta-form select {
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+  padding: 1.2rem;
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem#dee2e6;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.btn--form {
+  background-color: #364fc7;
+  color: #fdf2e9;
+  align-self: end;
+  /* padding: 1.2rem; */
+  margin-right: 7rem;
+}
+
+/* .form {
+  font-size: 1.4rem;
+} */
+
+.cta-text {
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+/* .login {
+  justify-self: center;
+} */
+
+.login-botton {
+  padding-left: 2rem;
 }
