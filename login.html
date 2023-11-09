@@ -22,138 +22,92 @@
     <!-- LINK CSS FILE -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- BOOTSTRAPS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <!-- <header>
-      <header class="header">
-        <a href="#">
-          <img class="logo" alt="PMA logo" src="img/logo-sma-1-01.svg" />
-        </a>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#profil-sekolah">Home</a></li>
-            <li><a class="main-nav-link" href="#">Feature</a></li>
-            <li><a class="main-nav-link" href="#">About</a></li>
-            <li>
-              <a class="footer-link" href="search.html"
-                ><ion-icon class="icon-search" name="search-outline"></ion-icon
-              ></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </header> -->
+    <!-- BOOTSTRAPS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
 
     <main>
-      <!-- dengan bootstrap -->
-      <!-- <section class="section-cta">
-        <div class="container">
-          <h2><strong>PMA</strong>- Persons Management App</h2>
-          <div class="mb-3 row">
-            <label for="staticEmail" class="col-sm-2 col-form-label"
-              >Email</label
-            >
-            <div class="col-sm-10">
-              <input
-                type="text"
-                readonly
-                class="form-control-plaintext"
-                id="staticEmail"
-                value="email@example.com"
-              />
-            </div>
-          </div>
-          <div class="mb-3 row">
-            <label for="inputPassword" class="col-sm-2 col-form-label"
-              >Password</label
-            >
-            <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword" />
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- <section class="section-cta" id="login">
-        <div class="container">
-          <h2><strong>PMA</strong> - Persons Management App</h2>
-          <div class="cta cta-box">
-            <div class="cta-text-box">
-              <h3 class="cta-heading">masuk ke halaman administrasi</h3>
-              <form class="cta-form" action="#">
-                <div>
-                  <label for="name">Email:</label>
-                  <input
-                    id="email"
-                    type="email"
-                    placeholder="username"
-                    required
-                  />
+      <!-- <section class="section-cta" id="login"> -->
+      <!-- row-col-2 g-col-12 row-cols-1-->
+      <section
+        class="section-cta d-flex align-items-center justify-content-center"
+      >
+        <div class="contaier">
+          <div class="row">
+            <div class="col-12 col-lg-12 col-xl-12">
+              <h1 class="heading-primary">
+                <strong class="PMA">PMA</strong> - Persons Management App
+              </h1>
+              <div class="cta">
+                <div class="cta-heading">
+                  <h2>masuk ke halaman administrasi</h2>
                 </div>
+                <div class="cta-box">
+                  <div class="cta-icon">
+                    <!-- <ion-icon name="lock-closed"></ion-icon> -->
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                  </div>
+                  <div class="cta-text-box">
+                    <form class="cta-form" action="#">
+                      <div class="form">
+                        <label for="name">Email:</label>
+                        <input
+                          id="email"
+                          type="email"
+                          placeholder="me@example.com"
+                          required
+                        />
+                      </div>
+                      <div class="form">
+                        <label for="password">Password:</label>
+                        <input
+                          id="password"
+                          type="password"
+                          placeholder="password"
+                          required
+                        />
+                      </div>
 
-                <div>
-                  <label for="password">Password:</label>
-                  <input
-                    id="password"
-                    type="password"
-                    placeholder="password"
-                    required
-                  />
+                      <button class="btn-a btn--form btn--full">Login</button>
+                      <!-- ini button dengan menggunakan bootstraps -->
+                      <!-- <button type="button" class="btn btn-outline-primary">
+                    Primary
+                  </button> -->
+                    </form>
+                  </div>
                 </div>
-                <button class="btn btn--form" href="index.html">Login</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <section class="section-cta" id="login">
-        <div class="container">
-          <h1 class="heading-primary">
-            <strong class="PMA">PMA</strong> - Persons Management App
-          </h1>
-          <div class="cta">
-            <div class="cta-heading">
-              <h5>masuk ke halaman administrasi</h5>
-            </div>
-            <div class="cta-box">
-              <div class="cta-icon">
-                <!-- <ion-icon name="lock-closed"></ion-icon> -->
-                <ion-icon name="lock-closed-outline"></ion-icon>
+                <div class="link">
+                  <a class="cta-link" href="#">Register as Member</a> "or"
+                  <a class="cta-link" href="#">Forgot Password?</a>
+                </div>
               </div>
-              <div class="cta-text-box">
-                <form class="cta-form" action="#">
-                  <div class="form">
-                    <label for="name">Email:</label>
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="me@example.com"
-                      required
-                    />
-                  </div>
-                  <div class="form">
-                    <label for="password">Password:</label>
-                    <input
-                      id="password"
-                      type="password"
-                      placeholder="password"
-                      required
-                    />
-                  </div>
-                  <button class="btn btn--form">Login</button>
-                  <!-- <a
-                    class="btn btn--form"
-                    type="button"
-                    href="dashboard.html"
-                  ></a> -->
-                </form>
-              </div>
-            </div>
-            <div class="link">
-              <a class="cta-link" href="#">Register as Member</a> "or"
-              <a class="cta-link" href="#">Forgot Password?</a>
             </div>
           </div>
         </div>
