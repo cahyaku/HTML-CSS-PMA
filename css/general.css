@@ -141,15 +141,54 @@ body {
 }
 
 .person-icon {
-  height: 3.2rem;
-  width: 3.2rem;
+  height: 3.4rem;
+  width: 3.4rem;
   font-size: 3rem;
   color: #364fc7;
   background-color: #e9ecef;
-  padding: 1.8rem;
+  /* padding: 1.8rem; */
+  padding: 1rem;
   border-radius: 50%;
 }
 
-.main-nav-link {
+/* NAVIGATION */
+.main-nav {
+  list-style: none;
+}
+
+.main-nav-list {
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: block;
   text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin: 3rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  /* padding: 1rem; */
+  background-color: rgba(148, 187, 233, 1);
+}
+
+.dropdown-style {
+  color: red;
+}
+
+.icon-header {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #364fc7;
+}
+
+.main-nav-person {
+  display: flex;
+  position: relative;
 }

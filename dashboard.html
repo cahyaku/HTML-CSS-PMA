@@ -53,19 +53,87 @@
     ></script>
 
     <header class="header">
-      <!-- <div class="container"> -->
-      <div class="logo-box">
-        <!-- <h2 class="heading-secondary">
-          <strong class="PMA">PMA</strong> - Persons Management App
-        </h2> -->
+      <button
+        class="btn-a btn-primary btn--full btn--outline"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"
+      >
+        <ion-icon class="icon-header" name="menu"></ion-icon>
+        <!-- Enable body scrolling -->
+      </button>
 
-        <a href="#">
-          <img
-            class="logo"
-            alt="Persons Management App logo"
-            src="img/Pasted image.png"
-          />
-        </a>
+      <!-- <button class="btn btn-primary">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button> -->
+
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header">
+          <h2
+            class="offcanvas-title heading-secondary"
+            id="offcanvasScrollingLabel"
+          >
+            <!-- Offcanvas with body scrolling -->
+            <strong class="PMA">PMA</strong> - Persons Management App
+          </h2>
+          <button class="btn-a" type="button" data-bs-dismiss="offcanvas">
+            <ion-icon class="icon-header" name="close"></ion-icon>
+          </button>
+        </div>
+
+        <!-- BODY (NAVIGATION) -->
+        <div class="offcanvas-body">
+          <p>
+            Try scrolling the rest of the page to see this option in action.
+          </p>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li>
+                <a class="main-nav-link dahsboard-link" href="#">
+                  <ion-icon name="speedometer"></ion-icon>
+                  Dashboard</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link persons-link" href="#">
+                  <ion-icon name="people"></ion-icon>
+                  Persons
+                  <select name="person" id="Person">
+                    <option value="All Persons">All Persons</option>
+                    <option value="Delete Person">Delete person</option>
+                  </select></a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link account-link" href="#">
+                  <ion-icon name="person-circle"></ion-icon>
+                  My Account</a
+                >
+              </li>
+              <li>
+                <a class="main-nav-link edit-profile-link" href="#">
+                  <ion-icon clas="nav-icon" name="create"></ion-icon>
+                  Edit Profil
+                </a>
+              </li>
+              <li>
+                <a class="main-nav-link logout-link" href="#">
+                  <ion-icon name="log-out"></ion-icon>
+                  Logout</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
 
       <div class="person-link-box">
@@ -73,45 +141,53 @@
         <a class="person-link" href="#">me@example.com</a>
         <!-- <a class="person-link" href="#">me@example.com</a> -->
       </div>
-      <!-- </div> -->
     </header>
 
     <main>
       <section class="section-home">
-        <div class="background-container">
-          <div class="home-box">
-            <nav class="main-nav">
-              <ul class="main-nav-list">
-                <li>
-                  <a class="main-nav-link dahsboard-link" href="#">Dashboard</a>
-                </li>
-                <li>
-                  <a class="main-nav-link persons-link" href="#">Persons</a>
-                </li>
-                <li>
-                  <a class="main-nav-link account-link" href="#">My Account</a>
-                </li>
-                <li>
-                  <a class="main-nav-link edit-profile-link" href="#"
-                    >Edit Profile</a
-                  >
-                </li>
-                <li>
-                  <a class="main-nav-link logout-link" href="#">Logout</a>
-                </li>
-              </ul>
-            </nav>
+        <!-- BOOTSTRAPS GRID -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-12 col-lg-12 col-xl-12"> -->
+        <div class="row">
+          <div class="col-12 col-lg-12 col-xl-12">
+            <div class="dashboard-box">
+              <div class="persons-box">
+                <div class="person-header">
+                  <h3 class="box-title">Persons</h3>
+                </div>
 
-            <div class="persons-box">
-              <div class="person-header">
-                <h3 class="box-title">Persons</h3>
+                <div class="add-button">
+                  <button class="btn-a btn--full btn-add">+Add</button>
+                </div>
               </div>
 
-              <div class="button">
-                <button class="btn-a btn--full btn-add">+Add</button>
+              <div class="search-box">
+                <label for="site-search">Search the site:</label>
+                <input type="search" id="site-search" name="q" />
+                <button>Search</button>
+
+                <!-- <form>
+                  <div class="search-box">
+                    <div class="form">
+                      <label for="site-search">
+                        <ion-icon name="mail"></ion-icon>
+                        Search</label
+                      >
+                      <input
+                        id="search"
+                        type="search"
+                        placeholder="me@example.com"
+                        required
+                      />
+                      <button class="btn-a btn--form btn--full">Search</button>
+                    </div>
+                  </div>
+                </form> -->
               </div>
             </div>
           </div>
+          <!-- </div>
+          </div> -->
         </div>
       </section>
     </main>

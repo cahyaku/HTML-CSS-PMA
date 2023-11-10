@@ -1,26 +1,10 @@
+/****************/
 /* SECTION HOME */
-/* .section-home {
-  padding: 9.6rem 0;
+/****************/
+
+.section-home {
   background-color: seashell;
-} */
-
-.background-container {
-  background-color: seashell;
-}
-
-.home-box {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  /* grid-column: 1fr 1fr; */
-  /* column-gap: 3rem; */
-}
-
-.persons-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 9.6rem;
-  padding: 0 3.2rem;
+  height: 100vh;
 }
 
 .btn-add {
@@ -39,33 +23,6 @@
   color: #364fc7;
 }
 
-/* NAVIGATION */
-.main-nav {
-  /* border-right: 0.1rem solid rgba(128, 128, 128, 0.603); */
-  border-right: 0.1rem solid rgba(0, 0, 0, 0.705);
-  height: 100vh;
-  padding: 5rem 3rem 0rem 3rem;
-  list-style: none;
-}
-
-.main-nav-list {
-  list-style: none;
-}
-
-.main-nav-link:link,
-.main-nav-link:visited {
-  color: #333;
-  font-size: 1.8rem;
-}
-
-.main-nav-link:hover,
-.main-nav-link:active {
-  display: block;
-  padding: 1rem;
-  /* background-color: #e9ecef; */
-  background-color: rgba(148, 187, 233, 1);
-}
-
 .box-title {
   font-size: 3.2rem;
   font-weight: bold;
@@ -75,3 +32,45 @@
   display: flex;
   justify-content: space-between;
 } */
+
+label {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+  /* font: inherit; */
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+  width: 100vh;
+  padding: 1rem;
+}
+
+/* DASHBOARD BOX */
+.dashboard-box {
+  /* padding-left: 3.2rem; */
+  padding: 0 4rem;
+}
+
+.persons-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding-top: 10rem;
+  /* padding: 10rem 3.2rem 0 0; */
+  /* padding: 5rem 3rem 0rem 3rem; */
+}
+
+/* STYLE DASHBOARD TEST */
+.home-box {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.main-nav-test {
+  border-right: 0.1rem solid rgba(0, 0, 0, 0.705);
+  height: 100vh;
+  padding: 5rem 3rem 0rem 3rem;
+  list-style: none;
+}

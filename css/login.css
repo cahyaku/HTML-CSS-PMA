@@ -152,3 +152,9 @@
   text-decoration: underline;
   color: #364fc7;
 }
+
+.form-icon {
+  color: red;
+  height: 2rem;
+  width: 2rem;
+}

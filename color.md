@@ -20,3 +20,27 @@
 
 > background-color: #fff;
 > background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 120%);
+
+    <header class="header">
+      <!-- <div class="container"> -->
+      <div class="logo-box">
+        <!-- <h2 class="heading-secondary">
+          <strong class="PMA">PMA</strong> - Persons Management App
+        </h2> -->
+
+        <a href="#">
+          <img
+            class="logo"
+            alt="Persons Management App logo"
+            src="img/Pasted image.png"
+          />
+        </a>
+      </div>
+
+      <div class="person-link-box">
+        <ion-icon name="person" class="person-icon"></ion-icon>
+        <a class="person-link" href="#">me@example.com</a>
+        <!-- <a class="person-link" href="#">me@example.com</a> -->
+      </div>
+      <!-- </div> -->
+    </header>
