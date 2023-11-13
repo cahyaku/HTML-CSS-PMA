@@ -126,18 +126,24 @@ body {
   background: radial-gradient(
     circle,
     rgba(63, 94, 251, 1) 0%,
-
     rgba(238, 174, 202, 1) 110%
   ); */
 
+  /* background-color: #fff;
+  background: radial-gradient(#fff 0%, rgba(63, 94, 251, 1) 130%); */
+
   /* background: #fff; */
   /* background: radial-gradient(circle, #fff 0%, rgba(148, 187, 233, 1) 100%); */
-  /* background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 120%); */
 }
 
-.logo {
+/* .logo {
   height: 5rem;
   width: 5rem;
+} */
+
+.logo-PMA {
+  width: 100%;
+  align-self: center;
 }
 
 .person-icon {
@@ -151,7 +157,9 @@ body {
   border-radius: 50%;
 }
 
+/***************************/
 /* NAVIGATION */
+/***************************/
 .main-nav {
   list-style: none;
 }
@@ -191,4 +199,40 @@ body {
 .main-nav-person {
   display: flex;
   position: relative;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* .border-b {
+  border-bottom: 0.1rem solid black;
+} */
+
+/*****************/
+/* MAIN NAV LINK */
+/*****************/
+.persons-link {
+  color: green;
+}
+
+.persons-link:link,
+.persons-link:visited {
+  color: #364fc7;
+}
+
+.logout-link:link,
+.logout-link:visited {
+  color: red;
+}
+/* .footer-link:hover,
+.footer-link:active {
+  color: #364fc7;
+} */
+
+/* SIDEBAR */
+.sidebar {
+  width: 2rem;
 }

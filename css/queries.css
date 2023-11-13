@@ -14,17 +14,19 @@
 } */
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-  /* LOGIN */
+/* @media (max-width: 768px) {
   .cta-icon {
     font-size: 20rem;
   }
-}
+} */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-  /* LOGIN  */
   .cta-icon {
+    display: none;
+  }
+
+  .cta-logo {
     display: none;
   }
 
@@ -34,5 +36,9 @@
 
   .cta-text-box {
     padding: 2rem;
+  }
+
+  .person-link {
+    display: none;
   }
 }

@@ -8,6 +8,7 @@
     <!-- LINK CSS FILE -->
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- LINK ION ICON -->
     <script
@@ -52,7 +53,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <header class="header">
+    <!-- <header class="header">
       <button
         class="btn-a btn-primary btn--full btn--outline"
         type="button"
@@ -61,14 +62,8 @@
         aria-controls="offcanvasScrolling"
       >
         <ion-icon class="icon-header" name="menu"></ion-icon>
-        <!-- Enable body scrolling -->
+       Enable body scrolling
       </button>
-
-      <!-- <button class="btn btn-primary">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button> -->
-
       <div
         class="offcanvas offcanvas-start"
         data-bs-scroll="true"
@@ -82,7 +77,6 @@
             class="offcanvas-title heading-secondary"
             id="offcanvasScrollingLabel"
           >
-            <!-- Offcanvas with body scrolling -->
             <strong class="PMA">PMA</strong> - Persons Management App
           </h2>
           <button class="btn-a" type="button" data-bs-dismiss="offcanvas">
@@ -90,7 +84,6 @@
           </button>
         </div>
 
-        <!-- BODY (NAVIGATION) -->
         <div class="offcanvas-body">
           <p>
             Try scrolling the rest of the page to see this option in action.
@@ -139,55 +132,210 @@
       <div class="person-link-box">
         <ion-icon name="person" class="person-icon"></ion-icon>
         <a class="person-link" href="#">me@example.com</a>
-        <!-- <a class="person-link" href="#">me@example.com</a> -->
       </div>
+    </header> -->
+    <header>
+      <nav class="navbar bg-body-tertiary header">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="header-box">
+              <button
+                class="btn-a btn-primary btn--outline"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+              >
+                <ion-icon class="icon-header" name="menu"></ion-icon>
+              </button>
+
+              <!-- LOGO PMA -->
+              <!-- <img
+              src="img/logo-sma-1-01.svg"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            /> -->
+              <h2 class="PMA">LOGO PMA</h2>
+            </div>
+
+            <div
+              class="offcanvas offcanvas-start sidebar"
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
+              tabindex="-1"
+              id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel"
+            >
+              <div class="offcanvas-header border-bottom">
+                <h2
+                  class="offcanvas-title heading-secondary"
+                  id="offcanvasScrollingLabel"
+                >
+                  <strong class="PMA">PMA</strong> - Persons Management App
+                </h2>
+                <button class="btn-a" type="button" data-bs-dismiss="offcanvas">
+                  <ion-icon class="icon-header" name="close"></ion-icon>
+                </button>
+              </div>
+
+              <div class="offcanvas-body">
+                <p>
+                  Try scrolling the rest of the page to see this option in
+                  action.
+                </p>
+                <nav class="main-nav">
+                  <ul class="main-nav-list">
+                    <li>
+                      <a class="main-nav-link dahsboard-link" href="#">
+                        <ion-icon name="speedometer"></ion-icon>
+                        Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-nav-link persons-link" href="#">
+                        <ion-icon name="people"></ion-icon>
+                        Persons
+                        <!-- Ini Untuk Menampikan dropdown -->
+                        <!-- <select name="person" id="Person">
+                          <option value="All Persons">All Persons</option>
+                          <option value="Delete Person">Delete person</option>
+                        </select> -->
+                      </a>
+                    </li>
+                    <li>
+                      <a class="main-nav-link account-link" href="#">
+                        <ion-icon name="person-circle"></ion-icon>
+                        My Account</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-nav-link edit-profile-link" href="#">
+                        <ion-icon clas="nav-icon" name="create"></ion-icon>
+                        Edit Profil
+                      </a>
+                    </li>
+                    <li>
+                      <a class="main-nav-link logout-link" href="#">
+                        <ion-icon name="log-out"></ion-icon>
+                        Logout</a
+                      >
+                    </li>
+                  </ul>
+
+                  <!-- <div class="dropdown">
+                    <a
+                      href="#"
+                      class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="https://github.com/mdo.png"
+                        alt=""
+                        width="32"
+                        height="32"
+                        class="rounded-circle me-2"
+                      />
+                      <strong>mdo</strong>
+                    </a>
+                    <ul
+                      class="dropdown-menu dropdown-menu-dark text-small shadow"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">New project...</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                  </div> -->
+                </nav>
+              </div>
+            </div>
+            <div class="person-link-box">
+              <ion-icon name="person" class="person-icon"></ion-icon>
+              <a class="person-link" href="#">me@example.com</a>
+            </div>
+          </a>
+        </div>
+      </nav>
     </header>
 
     <main>
       <section class="section-home">
-        <!-- BOOTSTRAPS GRID -->
-        <!-- <div class="row"> -->
-        <!-- <div class="col-12 col-lg-12 col-xl-12"> -->
-        <div class="row">
-          <div class="col-12 col-lg-12 col-xl-12">
-            <div class="dashboard-box">
-              <div class="persons-box">
-                <div class="person-header">
-                  <h3 class="box-title">Persons</h3>
+        <!-- BOOTSTRAPS -->
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-12">
+              <div class="dashboard-box">
+                <div class="persons-box">
+                  <div class="person-header">
+                    <h3 class="box-title">Persons</h3>
+                  </div>
+
+                  <div class="add-button">
+                    <button class="btn-a btn--full btn-add">+Add</button>
+                  </div>
                 </div>
+                <!-- <div class="search-box">
+                  <label for="site-search">Search the site:</label>
+                  <input type="search" id="site-search" name="q" />
+                  <button>Search</button>
+                </div> -->
 
-                <div class="add-button">
-                  <button class="btn-a btn--full btn-add">+Add</button>
-                </div>
-              </div>
-
-              <div class="search-box">
-                <label for="site-search">Search the site:</label>
-                <input type="search" id="site-search" name="q" />
-                <button>Search</button>
-
-                <!-- <form>
-                  <div class="search-box">
-                    <div class="form">
-                      <label for="site-search">
-                        <ion-icon name="mail"></ion-icon>
-                        Search</label
-                      >
+                <div class="search-box">
+                  <div class="form">
+                    <form class="d-flex" role="search">
                       <input
-                        id="search"
+                        class="form-control me-2 form"
                         type="search"
-                        placeholder="me@example.com"
-                        required
+                        placeholder="Search"
+                        aria-label="Search"
                       />
-                      <button class="btn-a btn--form btn--full">Search</button>
+                      <button type="button" class="btn btn-outline-primary">
+                        Search
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <!-- <form class="cta-form">
+                  <div class="mb-3">
+                    <label for="password">
+                      <ion-icon name="key"></ion-icon>
+                      Password
+                    </label>
+                    <input
+                      class="form-contol"
+                      id="password"
+                      name="password"
+                      type="password"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <button type="button" class="btn btn-outline-primary">
+                    Search
+                  </button>
+                </form> -->
+                <!-- <div class="persons">
+                  <div class="person-box">
+                    <div class="person-email person-box-title">
+                      <h3>email</h3>
+                    </div>
+                    <div class="person-name person-box-title">
+                      <h3>nama lengkap</h3>
+                    </div>
+                    <div class="person-role person-box-title">
+                      <h3>role</h3>
                     </div>
                   </div>
-                </form> -->
+                </div> -->
               </div>
             </div>
           </div>
-          <!-- </div>
-          </div> -->
         </div>
       </section>
     </main>
