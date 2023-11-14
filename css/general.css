@@ -102,44 +102,19 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.705);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  /* box-shadow: 0 2.4rem 4.8rem red; */
   padding: 0 4.8rem;
   height: 9.6rem;
-  /* background-color: #3b5bdb; */
-
-  /* background: radial-gradient(circle, #91a7ff, #fff); */
-
-  /* background: rgb(63, 94, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 1) 100%
-  ); */
-
-  background: rgb(238, 174, 202);
+  /* background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 100%
-  );
-
-  /* background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(238, 174, 202, 1) 110%
   ); */
-
-  /* background-color: #fff;
-  background: radial-gradient(#fff 0%, rgba(63, 94, 251, 1) 130%); */
-
-  /* background: #fff; */
-  /* background: radial-gradient(circle, #fff 0%, rgba(148, 187, 233, 1) 100%); */
+  background-color: rgba(148, 187, 233, 1);
+  /* background: #3b5bdb; */
 }
-
-/* .logo {
-  height: 5rem;
-  width: 5rem;
-} */
 
 .logo-PMA {
   width: 100%;
@@ -147,12 +122,11 @@ body {
 }
 
 .person-icon {
-  height: 3.4rem;
-  width: 3.4rem;
+  height: 3.2rem;
+  width: 3.2rem;
   font-size: 3rem;
   color: #364fc7;
   background-color: #e9ecef;
-  /* padding: 1.8rem; */
   padding: 1rem;
   border-radius: 50%;
 }
@@ -160,12 +134,13 @@ body {
 /***************************/
 /* NAVIGATION */
 /***************************/
-.main-nav {
+/* .main-nav {
   list-style: none;
-}
+} */
 
 .main-nav-list {
   list-style: none;
+  /* gap: 4.8rem; */
 }
 
 .main-nav-link:link,
@@ -176,14 +151,16 @@ body {
   font-size: 1.8rem;
   font-weight: 600;
   padding: 1rem;
-  margin: 3rem;
+  /* margin: 3rem; */
+  margin: 0rem 3rem 3rem 3rem;
   transition: all 0.3s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
   /* padding: 1rem; */
-  background-color: rgba(148, 187, 233, 1);
+  background-color: #fff;
+  /* background-color: rgba(148, 187, 233, 1); */
 }
 
 .dropdown-style {
@@ -207,9 +184,9 @@ body {
   gap: 1rem;
 }
 
-/* .border-b {
+.border-b {
   border-bottom: 0.1rem solid black;
-} */
+}
 
 /*****************/
 /* MAIN NAV LINK */
@@ -227,12 +204,26 @@ body {
 .logout-link:visited {
   color: red;
 }
-/* .footer-link:hover,
-.footer-link:active {
-  color: #364fc7;
-} */
 
 /* SIDEBAR */
 .sidebar {
   width: 2rem;
+}
+
+.btn-nav {
+  /* untuk menghapus border pada icon */
+  border: none;
+  /* menghapus warna background pada icon */
+  background: none;
+}
+
+/* mengatur tinggi header disidebar */
+.offcanvas-header {
+  height: 8.5rem;
+}
+
+.offcanvas.offcanvas-start {
+  /* width: 320px; */
+  background-color: #fff;
+  background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 150%);
 }

@@ -3,7 +3,9 @@
 /****************/
 
 .section-home {
-  background-color: seashell;
+  /* background-color: seashell; */
+  /* background: #fff;
+  background: radial-gradient(circle, #fff 0%, rgba(148, 187, 233, 1) 100%); */
   height: 100vh;
 }
 
@@ -11,9 +13,9 @@
   background-color: #364fc7;
 }
 
-.person-link-box {
+/* .person-link-box {
   display: flex;
-}
+} */
 
 .person-link {
   align-self: center;
@@ -24,8 +26,9 @@
 }
 
 .box-title {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   font-weight: bold;
+  color: #333;
 }
 
 label {
@@ -71,21 +74,62 @@ label {
   list-style: none;
 }
 
-.form {
-  padding: 3rem;
-}
-
 /* PERSONS BOX */
 .person-box {
   padding-top: 2.4rem;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 0.1rem solid black;
+  /* border-bottom: 0.1rem dashed #333; */
+  /* border-bottom: 0.1rem solid black; */
 }
 
 .person-box-title {
   font-size: 2.4rem;
   color: #333;
   font-weight: 700;
+}
+
+.form {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+}
+
+.form input,
+.form button {
+  padding: 1.3rem 1rem;
+  font-size: 1.8rem;
+}
+
+.form button:link,
+.form button:visited {
+  background: #fff;
+  transition: all 1s;
+}
+
+.form button:hover,
+.form button:active {
+  /* background-color: #364fc7; */
+  /* background: rgba(63, 94, 251, 1) 100%; */
+  background-color: #3b5bdb;
+}
+
+/* .position-fixed {
+  position: fixed;
+  top: 72px;
+  bottom: 0;
+  left: 0;
+} */
+
+/* TABLE */
+.table {
+  margin-top: 3.2rem;
+}
+
+.table thead {
+  font-size: 2.4rem;
+  color: #111;
+}
+
+.table tbody {
+  font-size: 1.8rem;
 }
