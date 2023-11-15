@@ -55,9 +55,9 @@
     <header>
       <nav class="navbar bg-body-tertiary header">
         <div class="container-fluid">
-          <div class="header-box">
+          <div class="d-flex align-items-center">
             <button
-              class="btn-nav"
+              class="btn-nav d-lg-none"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasScrolling"
@@ -77,7 +77,9 @@
               />
             </a> -->
 
-            <h2 class="PMA">LOGO PMA</h2>
+            <div>
+              <h2 class="PMA">LOGO PMA</h2>
+            </div>
           </div>
 
           <div
@@ -106,13 +108,11 @@
             <div
               class="offcanvas-body d-flex flex-column justify-content-between"
             >
-              <!-- class="offcanvas-body d-flex flex-column justify-content-between" -->
-
-              <!-- <p>
+              <nav class="main-nav">
+                <p>
                   Try scrolling the rest of the page to see this option in
                   action.
-                </p> -->
-              <nav class="main-nav">
+                </p>
                 <ul class="main-nav-list">
                   <li>
                     <a class="main-nav-link dahsboard-link" href="#">
@@ -150,39 +150,7 @@
                   </li>
                 </ul>
               </nav>
-              <!-- <div class="dropdown ">
-                <hr />
-                <a
-                  href="#"
-                  class="text-white text-decoration-none dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img
-                    src="https://github.com/mdo.png"
-                    alt=""
-                    width="32"
-                    height="32"
-                    class="rounded-circle me-2"
-                  />
 
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                  >
-                    > mdo
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </a>
-              </div> -->
               <div class="dropdown">
                 <hr />
                 <a
@@ -211,9 +179,17 @@
               </div>
             </div>
           </div>
-          <div class="person-link-box d-flex">
+          <!-- <div class="person-link-box d-flex">
             <ion-icon name="person" class="person-icon"></ion-icon>
             <a class="person-link" href="#">me@example.com</a>
+          </div> -->
+          <div class="d-flex align-items-center">
+            <div>
+              <ion-icon name="person" class="person-icon"></ion-icon>
+            </div>
+            <div class="d-none d-lg-block">
+              <a class="person-link" href="#">me@example.com</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -222,104 +198,210 @@
     <main>
       <section class="section-home">
         <!-- BOOTSTRAPS -->
-        <div class="container">
+        <!-- <div class="container">
           <div class="row justify-content-center">
-            <div class="col-12 col-lg-10 col-xl-12">
-              <div class="dashboard-box">
-                <div class="persons-box">
-                  <div class="person-header">
-                    <h3 class="box-title">Persons</h3>
-                  </div>
+            <div class="col-12 col-lg-10 col-xl-12"> -->
 
-                  <div class="add-button">
-                    <button class="btn-a btn--full btn-add">+Add</button>
-                  </div>
+        <div class="row justify-content-center">
+          <div class="sidebar col-lg-2 col-xl-3 d-none d-lg-flex flex-column">
+            <!-- SIDEBAR -->
+            <div
+              class="offcanvas offcanvas-start show position-fixed"
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
+              tabindex="-1"
+              id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel"
+              aria-modal="true"
+              role="dialog"
+            >
+              <div class="offcanvas-header">
+                <div class="d-flex align-items-center gx-2">
+                  <h1>LOGO</h1>
+                  <h2
+                    class="offcanvas-title heading-secondary"
+                    id="offcanvasScrollingLabel"
+                  >
+                    <strong class="PMA">PMA</strong>
+                  </h2>
                 </div>
-
-                <!-- <div class="search-box">
-                  <label for="site-search">Search the site:</label>
-                  <input type="search" id="site-search" name="q" />
-                  <button>Search</button>
-                </div> -->
-
-                <div class="search-box">
-                  <div class="form">
-                    <form class="d-flex" role="search">
-                      <input
-                        class="form-control me-2 form"
-                        type="search"
-                        placeholder="Search..."
-                        aria-label="Search"
-                      />
-                      <button
-                        type="button"
-                        class="btn btn-outline-primary btn-search"
+                <button
+                  class="btn-nav"
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <ion-icon
+                    class="icon-header md hydrated"
+                    name="close"
+                    role="img"
+                  ></ion-icon>
+                </button>
+              </div>
+              <hr />
+              <div
+                class="offcanvas-body d-flex flex-column justify-content-between"
+              >
+                <nav class="main-nav">
+                  <p>
+                    Try scrolling the rest of the page to see this option in
+                    action.
+                  </p>
+                  <ul class="main-nav-list">
+                    <li>
+                      <a class="main-nav-link dahsboard-link" href="#">
+                        <ion-icon
+                          name="speedometer"
+                          role="img"
+                          class="md hydrated"
+                        ></ion-icon>
+                        Dashboard</a
                       >
-                        Search
-                      </button>
-                    </form>
-                  </div>
-                </div>
+                    </li>
+                    <li>
+                      <a class="main-nav-link persons-link" href="#">
+                        <ion-icon
+                          name="people"
+                          role="img"
+                          class="md hydrated"
+                        ></ion-icon>
+                        Persons
+                        <!-- <select name="person" id="Person">
+                          <option value="All Persons">All Persons</option>
+                          <option value="Delete Person">Delete person</option>
+                        </select> -->
+                      </a>
+                    </li>
+                    <li>
+                      <a class="main-nav-link account-link" href="#">
+                        <ion-icon
+                          name="person-circle"
+                          role="img"
+                          class="md hydrated"
+                        ></ion-icon>
+                        My Account</a
+                      >
+                    </li>
+                    <li>
+                      <a class="main-nav-link edit-profile-link" href="#">
+                        <ion-icon
+                          clas="nav-icon"
+                          name="create"
+                          role="img"
+                          class="md hydrated"
+                        ></ion-icon>
+                        Edit Profil
+                      </a>
+                    </li>
+                    <li>
+                      <a class="main-nav-link logout-link" href="#">
+                        <ion-icon
+                          name="log-out"
+                          role="img"
+                          class="md hydrated"
+                        ></ion-icon>
+                        Logout</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
 
-                <!-- class="btn btn-outline-primary" -->
-                <!-- <form class="cta-form">
-                  <div class="mb-3">
-                    <label for="password">
-                      <ion-icon name="key"></ion-icon>
-                      Password
-                    </label>
-                    <input
-                      class="form-contol"
-                      id="password"
-                      name="password"
-                      type="password"
-                      placeholder="Password"
-                      required
+                <div class="dropdown">
+                  <hr />
+                  <a
+                    href="#"
+                    class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="https://github.com/mdo.png"
+                      alt=""
+                      width="32"
+                      height="32"
+                      class="rounded-circle me-2"
                     />
-                  </div>
+                    <!-- <strong>mdo</strong> -->
+                    <h3><srtong>mdo</srtong></h3>
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark text-small shadow"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">New project...</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-box col-7 col-lg-8 col-xl-8">
+            <!-- <div class="dashboard-box col-sm-8 col-md-12 col-7 col-lg-9 col-xl-8"> -->
+            <div class="persons-box">
+              <div class="person-header">
+                <h3 class="box-title">Persons</h3>
+              </div>
+
+              <div class="add-button">
+                <button class="btn-a btn--full btn-add">+Add</button>
+              </div>
+            </div>
+
+            <div class="search-box">
+              <div class="form">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2 form"
+                    type="search"
+                    placeholder="Search..."
+                    aria-label="Search"
+                  />
                   <button type="button" class="btn btn-outline-primary">
                     Search
                   </button>
-                </form> -->
-                <!-- <div class="persons">
-                  <div class="person-box">
-                    <div class="person-email person-box-title">
-                      <p class="person-box-title">email</p>
-                    </div>
-                    <div class="person-name person-box-title">
-                      <p class="person-box-tilte">nama lengkap</p>
-                    </div>
-                    <div class="person-role person-box-title">
-                      <p persons="person-box-title">role</p>
-                    </div>
-                  </div>
-                </div> -->
+                </form>
+              </div>
+            </div>
 
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">NO</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Role</th>
-                      <th scope="col"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
+            <div class="scroll">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Role</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <div class="table-body">
                     <tr>
                       <th scope="row">1</th>
                       <td>cahya@gmail.com</td>
                       <td>Cahya</td>
                       <td>ADMIN</td>
                       <td>
-                        <div class="text-end">
-                          <button type="button" class="btn btn-outline-primary">
-                            Edit
-                          </button>
+                        <div class="table-button">
+                          <div class="text-end">
+                            <button
+                              type="button"
+                              class="btn btn-outline-primary"
+                            >
+                              Edit
+                            </button>
 
-                          <button type="button" class="btn btn-outline-dark">
-                            View
-                          </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-primary"
+                            >
+                              View
+                            </button>
+                          </div>
                         </div>
                       </td>
                     </tr>
@@ -329,14 +411,22 @@
                       <td>Kumala@gmail.com</td>
                       <td>MEMBER</td>
                       <td>
-                        <div class="text-end">
-                          <button type="button" class="btn btn-outline-primary">
-                            Edit
-                          </button>
+                        <div class="table-button">
+                          <div class="text-end">
+                            <button
+                              type="button"
+                              class="btn btn-outline-primary"
+                            >
+                              Edit
+                            </button>
 
-                          <button type="button" class="btn btn-outline-dark">
-                            View
-                          </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-primary"
+                            >
+                              View
+                            </button>
+                          </div>
                         </div>
                       </td>
                     </tr>
@@ -344,47 +434,37 @@
                       <th scope="row">3</th>
                       <td>Ayong</td>
                       <td>Ayong@gmail.com</td>
-                      <!-- ini untuk langsung mengisi data nama dan melewati column selanjutnya-->
-                      <!-- <td colspan="2">Larry the Bird</td> -->
+
                       <td>@twitter</td>
                       <td>
-                        <div class="text-end">
-                          <!-- <button
-                            type="button"
-                            class="btn btn-outline-light me-2"
-                          >
-                            Edit
-                          </button>
-                          <button type="button" class="btn btn-warning">
-                            View
-                          </button> -->
-
-                          <button type="button" class="btn btn-outline-primary">
-                            Edit
-                          </button>
-
-                          <button type="button" class="btn btn-outline-dark">
-                            View
-                          </button>
+                        <div class="table-button">
+                          <div class="text-end">
+                            <button
+                              type="button"
+                              class="btn btn-outline-primary btn-edit"
+                            >
+                              Edit
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-primary btn-table"
+                            >
+                              View
+                            </button>
+                          </div>
                         </div>
                       </td>
                     </tr>
-                  </tbody>
-                </table>
-
-                <!-- <table class="table">
-                  <thead class="table-light">
-                    ...
-                  </thead>
-                  <tbody>
-                    ...
-                  </tbody>
-                </table> -->
-                <!-- <hr /> -->
-              </div>
+                  </div>
+                </tbody>
+              </table>
+              <!-- </div> -->
             </div>
           </div>
         </div>
+        <!-- </div>
+          </div>
+        </div> -->
       </section>
     </main>
   </body>

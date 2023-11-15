@@ -97,23 +97,24 @@ body {
 /*****************************************/
 /* HEADER */
 /*****************************************/
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.705);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  /* box-shadow: 0 2.4rem 4.8rem red; */
   padding: 0 4.8rem;
   height: 9.6rem;
-  /* background: rgb(238, 174, 202);
-  background: radial-gradient(
+  /* background-color: rgb(238, 174, 202); */
+  /* background: radial-gradient(
     circle,
     rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
+    rgba(148, 187, 233, 1) 80%
   ); */
-  background-color: rgba(148, 187, 233, 1);
-  /* background: #3b5bdb; */
+
+  /* background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 150%); */
+  z-index: 9999;
 }
 
 .logo-PMA {
@@ -211,9 +212,7 @@ body {
 }
 
 .btn-nav {
-  /* untuk menghapus border pada icon */
   border: none;
-  /* menghapus warna background pada icon */
   background: none;
 }
 
@@ -223,7 +222,11 @@ body {
 }
 
 .offcanvas.offcanvas-start {
-  /* width: 320px; */
+  width: 100%;
   background-color: #fff;
-  background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 150%);
+  background: linear-gradient(#fff 10%, rgba(63, 94, 251, 1) 100%);
+}
+
+.sidebar-background {
+  background-color: #e9ecef;
 }
