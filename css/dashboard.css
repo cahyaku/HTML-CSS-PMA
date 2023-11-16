@@ -1,19 +1,19 @@
 /****************/
-/* SECTION HOME */
+/* SECTION DASHBOARD*/
 /****************/
 
-.section-home {
-  /* background-color: seashell; */
+.section-dashboard {
+  /*background-color: #edf2ff;
   height: 100vh;
+  z-index: 9999; */
+  position: absolute;
+  /* right: 0;
+  left: auto; */
 }
 
 .btn-add {
   background-color: #364fc7;
 }
-
-/* .person-link-box {
-  display: flex;
-} */
 
 .person-link {
   align-self: center;
@@ -32,7 +32,6 @@
 label {
   display: block;
   font: 1rem "Fira Sans", sans-serif;
-  /* font: 1rem "Rubik", sans-serif; */
 }
 
 input,
@@ -42,9 +41,11 @@ label {
   padding: 1rem;
 }
 
-/* DASHBOARD BOX */
-.dashboard-box {
-  padding: 0 4rem;
+/* MAIN-CONTENT */
+.main-content {
+  padding-left: 4rem;
+  width: 100%;
+  position: relative;
 }
 
 .search-box {
@@ -56,8 +57,6 @@ label {
   justify-content: space-between;
   align-items: center;
   padding-top: 4.8rem;
-  /* padding: 10rem 3.2rem 0 0; */
-  /* padding: 5rem 3rem 0rem 3rem; */
 }
 
 /* STYLE DASHBOARD TEST */
@@ -72,20 +71,6 @@ label {
   padding: 5rem 3rem 0rem 3rem;
   list-style: none;
 }
-
-/* PERSONS BOX */
-/* .person-box {
-  padding-top: 2.4rem;
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-}
-
-.person-box-title {
-  font-size: 2.4rem;
-  color: #333;
-  font-weight: 700;
-} */
 
 .form {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
@@ -108,12 +93,13 @@ label {
   background-color: #3b5bdb;
 }
 
-.position-fixed {
+.sidebar-position-fixed {
   position: fixed;
   /* top: 72px; */
-  top: 115px;
+  top: 0;
   bottom: 0;
   left: 0;
+  width: 150px;
 }
 
 /* TABLE */
@@ -142,21 +128,12 @@ label {
   padding: 0.5rem 2rem;
 }
 
-.table > :not(caption) > * > * {
-  padding: 3rem 2rem;
-}
-
-.position-fixed-dashboard {
+/* .position-fixed-dashboard {
   position: fixed;
-  top: 72px;
-  /* top: 115px; */
+  top: 0;
   bottom: 0;
-  /* left: 0; */
+  left: 0;
   right: 0;
-}
-
-/* .table > tbody {
-  vertical-align: none;
 } */
 
 .scroll {
@@ -165,4 +142,29 @@ label {
 
 .table {
   min-width: 600px;
+}
+
+/* .table > tbody {
+  vertical-align: middle;
+} */
+
+.table > :not(caption) > * > * {
+  padding: 1rem 2rem;
+  background: none;
+}
+
+.thead {
+  background-color: #333;
+}
+
+.tbody {
+  vertical-align: middle;
+}
+/* .table > :not(caption) > * > * {
+  padding: 3rem 2rem;
+} */
+
+.main-position {
+  position: relative;
+  padding-left: 5rem;
 }

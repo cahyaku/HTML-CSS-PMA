@@ -98,24 +98,33 @@ body {
 /* HEADER */
 /*****************************************/
 
-.header {
-  display: flex;
+.header-background {
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.705);
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   padding: 0 4.8rem;
   height: 9.6rem;
-  /* background-color: rgb(238, 174, 202); */
   /* background: radial-gradient(
     circle,
     rgba(238, 174, 202, 1) 0%,
     rgba(148, 187, 233, 1) 80%
   ); */
-
-  /* background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 150%); */
   z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
+
+/* .header-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+} */
 
 .logo-PMA {
   width: 100%;
@@ -135,13 +144,9 @@ body {
 /***************************/
 /* NAVIGATION */
 /***************************/
-/* .main-nav {
-  list-style: none;
-} */
 
 .main-nav-list {
   list-style: none;
-  /* gap: 4.8rem; */
 }
 
 .main-nav-link:link,
@@ -207,9 +212,9 @@ body {
 }
 
 /* SIDEBAR */
-.sidebar {
+/* .sidebar {
   width: 2rem;
-}
+} */
 
 .btn-nav {
   border: none;
@@ -227,6 +232,11 @@ body {
   background: linear-gradient(#fff 10%, rgba(63, 94, 251, 1) 100%);
 }
 
-.sidebar-background {
-  background-color: #e9ecef;
+.offcanvas.offcanvas-start {
+  width: 320px;
 }
+
+/* .sidebar-background {
+  background: linear-gradient(#fff 10%, rgba(63, 94, 251, 1) 100%);
+  width: 310px;
+} */
