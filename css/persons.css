@@ -1,0 +1,162 @@
+/****************/
+/* SECTION PERSONS*/
+/****************/
+
+/* .section-dashboard {
+  background-color: #edf2ff;
+  height: 100vh;
+  z-index: 9999;
+  position: absolute;
+  right: 0;
+  left: auto;
+} */
+
+.section-persons {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.btn-add {
+  background-color: #364fc7;
+}
+
+/* .person-link {
+  align-self: center;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #364fc7;
+} */
+
+.box-title {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #333;
+}
+
+label {
+  display: block;
+  font: 1rem "Fira Sans", sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* MAIN-CONTENT */
+.main-content {
+  padding: 0 4.8rem;
+  width: 100%;
+  /* position: relative; */
+}
+
+.search-box {
+  padding-top: 9.6rem;
+}
+
+.persons-box {
+  /* display: flex;
+  justify-content: space-between; */
+  align-items: center;
+  padding-top: 4.8rem;
+}
+
+/* STYLE DASHBOARD TEST */
+.home-box {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.main-nav-test {
+  border-right: 0.1rem solid rgba(0, 0, 0, 0.705);
+  height: 100vh;
+  padding: 5rem 3rem 0rem 3rem;
+  list-style: none;
+}
+
+.form {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+}
+
+.form input,
+.form button {
+  padding: 1.3rem 1rem;
+  font-size: 1.8rem;
+}
+
+.form button:link,
+.form button:visited {
+  background: #fff;
+  transition: all 1s;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #3b5bdb;
+}
+
+/* TABLE */
+.table button:hover,
+.table button:active {
+  background-color: #3b5bdb;
+}
+
+.table-button button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.5rem 2rem;
+}
+
+.position-fixed-dashboard {
+  position: fixed;
+  top: 72px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.scroll {
+  overflow-x: scroll;
+}
+
+.table > :not(caption) > * > * {
+  padding: 2rem;
+  background: none;
+}
+
+table {
+  margin-top: 4.8rem;
+  min-width: 600px;
+}
+
+.table thead {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.table tbody {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+thead tr {
+  background-color: #364fc7;
+}
+
+/* table {
+  width: 800px;
+  margin-top: 100px;
+  font-size: 18px;
+  border-collapse: collapse;
+} */
+
+/* th,
+td {
+  padding-top: 2rem;
+} */

@@ -1,3 +1,132 @@
+> background: radial-gradient(circle, #91a7ff, #fff)
+> background-color: #f8f9fa;
+
+> background: rgb(63, 94, 251);
+> background: radial-gradient(
+> circle,
+> rgba(63, 94, 251, 1) 0%,
+> rgba(252, 70, 107, 1) 100%
+> );
+
+> background: rgb(238, 174, 202);
+> background: radial-gradient(
+> circle,
+> rgba(238, 174, 202, 1) 0%,
+> rgba(148, 187, 233, 1) 100%
+> );
+
+> background: #fff;
+> background: radial-gradient(circle, #fff 0%, rgba(148, 187, 233, 1) 100%);
+
+> background-color: #fff;
+> background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 120%);
+
+    <header class="header">
+      <!-- <div class="container"> -->
+      <div class="logo-box">
+        <!-- <h2 class="heading-secondary">
+          <strong class="PMA">PMA</strong> - Persons Management App
+        </h2> -->
+
+        <a href="#">
+          <img
+            class="logo"
+            alt="Persons Management App logo"
+            src="img/Pasted image.png"
+          />
+        </a>
+      </div>
+
+      <div class="person-link-box">
+        <ion-icon name="person" class="person-icon"></ion-icon>
+        <a class="person-link" href="#">me@example.com</a>
+        <!-- <a class="person-link" href="#">me@example.com</a> -->
+      </div>
+      <!-- </div> -->
+    </header>
+
+<table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">NO</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Role</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>cahya@gmail.com</td>
+                      <td>Cahya</td>
+                      <td>ADMIN</td>
+                      <td>
+                        <div class="text-end">
+                          <button type="button" class="btn btn-outline-primary">
+                            Edit
+                          </button>
+
+                          <button type="button" class="btn btn-outline-dark">
+                            View
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Kumala</td>
+                      <td>Kumala@gmail.com</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div class="text-end">
+                          <button type="button" class="btn btn-outline-primary">
+                            Edit
+                          </button>
+
+                          <button type="button" class="btn btn-outline-dark">
+                            View
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Ayong</td>
+                      <td>Ayong@gmail.com</td>
+                      <!-- ini untuk langsung mengisi data nama dan melewati column selanjutnya-->
+                      <!-- <td colspan="2">Larry the Bird</td> -->
+                      <td>@twitter</td>
+                      <td>
+                        <div class="text-end">
+                          <!-- <button
+                            type="button"
+                            class="btn btn-outline-light me-2"
+                          >
+                            Edit
+                          </button>
+                          <button type="button" class="btn btn-warning">
+                            View
+                          </button> -->
+
+                          <button type="button" class="btn btn-outline-primary">
+                            Edit
+                          </button>
+
+                          <button type="button" class="btn btn-outline-dark">
+                            View
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+/_ background: radial-gradient(circle, #fff 0%, rgba(148, 187, 233, 1) 100%); _/
+/_ background: radial-gradient(circle, #91a7ff, #fff); _/
+/_ background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 80%); _/
+
+<!-- PERSONS PAGE -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,6 +160,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
   </head>
 
   <body>
@@ -151,7 +281,7 @@
                       width="32"
                       height="32"
                       class="rounded-circle me-2"
-                    />
+                    />.sidebar { width: 2rem; }
                     <h3><srtong>mdo</srtong></h3>
                   </a>
                   <ul
@@ -184,11 +314,47 @@
     <main>
       <section class="section-dashboard d-flex">
         <!-- SIDEBAR -->
+        <!-- <div col="row"> -->
+        <!-- <div class="col-3"> -->
+        <!-- <div class="sidebar position-fixed"> -->
         <div class="sidebar-content d-none d-lg-flex">
+          <!-- <div class="sidebar-content d-none d-lg-flex"> -->
+          <!-- <div
+            class="offcanvas offcanvas-start show"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+            aria-modal="true"
+            role="dialog"
+          > -->
+          <!-- <div class="offcanvas-header">
+              <div class="d-flex align-items-center gx-2">
+                <h1>LOGO</h1>
+                <h2
+                  class="offcanvas-title heading-secondary"
+                  id="offcanvasScrollingLabel"
+                >
+                  <strong class="PMA">PMA</strong>
+                </h2>
+              </div>
+              <button class="btn-nav" type="button" data-bs-dismiss="offcanvas">
+                <ion-icon
+                  class="icon-header md hydrated"
+                  name="close"
+                  role="img"
+                ></ion-icon>
+              </button>
+            </div> -->
+          <hr />
           <div
             class="offcanvas-body d-flex flex-column justify-content-between sidebar-background"
           >
             <nav class="main-nav main-nav-padding">
+              <!-- <p>
+                Try scrolling the rest of the page to see this option in action.
+              </p> -->
               <ul class="main-nav-list">
                 <li>
                   <a class="main-nav-link dahsboard-link" href="#">
@@ -272,94 +438,132 @@
               </ul>
             </div>
           </div>
+          <!-- </div> -->
+          <!-- </div> -->
         </div>
+        <!-- </div> -->
+        <!-- <div class="col-9"> -->
 
-        <!-- MAIN CONTENT -->
-        <div class="main-content d-flex flex-column">
-          <div class="dashboard-content">
-            <div class="dashboard-header">
-              <h3 class="dashboard-title">Hi...</h3>
-              <p class="dashboard-text">
-                You were loginin previously in
-                <strong>Monday, 6 November 2023 3:04 PM</strong>
-              </p>
+        <div class="main-content">
+          <!-- <div class="test"> -->
+          <!-- <div class="container"> -->
+          <!-- <div class="row"> -->
+          <div class="persons-box">
+            <div class="person-header">
+              <h3 class="box-title">Persons</h3>
+            </div>
+            <div class="add-button">
+              <button class="btn-a btn--full btn-add">+Add</button>
             </div>
           </div>
 
-          <div class="dashboard-boxs">
-            <div class="row">
-              <!-- <div class="dashboard-box">
-                <div class="card col-4" style="width: 18rem">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      Card subtitle
-                    </h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-              </div> -->
-              <div class="dashboard-box col-12 col-lg-4">
-                <div class="card">
-                  <div class="card-body card-box">
-                    <h5 class="card-title">Card title</h5>
-                    <h6
-                      class="card-subtitle mb-2 text-body-secondary card-text"
-                    >
-                      Card subtitle
-                    </h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="dashboard-box col-12 col-lg-4">
-                <div class="card">
-                  <div class="card-body card-box">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      Card subtitle
-                    </h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="dashboard-box col-12 col-lg-4">
-                <div class="card">
-                  <div class="card-body card-box">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">
-                      Card subtitle
-                    </h6>
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
-              </div>
+          <div class="search-box">
+            <div class="form">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2 form"
+                  type="search"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+                <button type="button" class="btn btn-outline-primary">
+                  Search
+                </button>
+              </form>
             </div>
           </div>
+
+          <!-- <div class="scroll"> -->
+          <div class="table-responsive">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Role</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <div class="table-body"> -->
+                <tr>
+                  <th scope="row">1</th>
+                  <td>cahya@gmail.com</td>
+                  <td>Cahya</td>
+                  <td>ADMIN</td>
+                  <td>
+                    <div class="table-button">
+                      <div class="text-end">
+                        <button type="button" class="btn btn-outline-primary">
+                          Edit
+                        </button>
+
+                        <button type="button" class="btn btn-outline-primary">
+                          View
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Kumala</td>
+                  <td>Kumala@gmail.com</td>
+                  <td>MEMBER</td>
+                  <td>
+                    <div class="table-button">
+                      <div class="text-end">
+                        <button type="button" class="btn btn-outline-primary">
+                          Edit
+                        </button>
+
+                        <button type="button" class="btn btn-outline-primary">
+                          View
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Ayong</td>
+                  <td>Ayong@gmail.com</td>
+
+                  <td>@twitter</td>
+                  <td>
+                    <div class="table-button">
+                      <div class="text-end">
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary btn-edit"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-outline-primary btn-table"
+                        >
+                          View
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <!-- </div> -->
+              </tbody>
+            </table>
+          </div>
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
         </div>
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
       </section>
     </main>
+
   </body>
 </html>

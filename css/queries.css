@@ -21,7 +21,7 @@
 } */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .cta-icon {
     display: none;
   }
@@ -41,4 +41,4 @@
   .person-link {
     display: none;
   }
-}
+} */
