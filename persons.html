@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/persons.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- LINK ION ICON -->
     <script
@@ -52,7 +53,7 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <header>
+    <header class="sticky-top">
       <nav class="navbar bg-body-tertiary header-background">
         <div class="container-fluid">
           <div class="d-flex align-items-center">
@@ -274,7 +275,7 @@
         </div>
 
         <!-- MAIN CONTENT -->
-        <div class="main-content">
+        <div class="main-content-persons">
           <div class="persons-box d-flex justify-content-between">
             <div class="person-header">
               <h3 class="box-title">Persons</h3>
@@ -302,19 +303,64 @@
 
           <!-- <div class="scroll"> -->
           <div class="table-responsive">
-            <table class="table table-striped table-hover">
+            <table class="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">No</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Role</th>
-                  <th scope="col"></th>
+                  <th
+                    scope="col"
+                    class="th"
+                    style="
+                      background-color: #5c7cfa;
+                      color: #fff;
+                      padding: 1.8rem;
+                    "
+                  >
+                    No
+                  </th>
+                  <th
+                    scope="col"
+                    class="th"
+                    style="
+                      background-color: #5c7cfa;
+                      color: #fff;
+                      padding: 1.8rem;
+                    "
+                  >
+                    Email
+                  </th>
+                  <th
+                    scope="col"
+                    style="
+                      background-color: #5c7cfa;
+                      color: #fff;
+                      padding: 1.8rem;
+                    "
+                  >
+                    Name
+                  </th>
+                  <th
+                    scope="col"
+                    style="
+                      background-color: #5c7cfa;
+                      color: #fff;
+                      padding: 1.8rem;
+                    "
+                  >
+                    Role
+                  </th>
+                  <th
+                    scope="col"
+                    style="
+                      background-color: #5c7cfa;
+                      color: #fff;
+                      padding: 1.8rem;
+                    "
+                  ></th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">1</th>
+                <tr style="vertical-align: baseline">
+                  <th scope="row" style="padding: 1rem">1</th>
                   <td>cahya@gmail.com</td>
                   <td>Cahya</td>
                   <td>ADMIN</td>
@@ -332,8 +378,8 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
-                  <th scope="row">2</th>
+                <tr style="vertical-align: baseline">
+                  <th scope="row" style="padding: 1rem">2</th>
                   <td>Kumala</td>
                   <td>Kumala@gmail.com</td>
                   <td>MEMBER</td>
@@ -343,7 +389,27 @@
                         <button type="button" class="btn btn-outline-primary">
                           Edit
                         </button>
-
+                        <button type="button" class="btn btn-outline-primary">
+                          View
+                        </button>
+                        <!-- <button type="button" class="btn btn-outline-success">
+                          View
+                        </button> -->
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr style="vertical-align: baseline">
+                  <th scope="row" style="padding: 1rem">3</th>
+                  <td>Ayong</td>
+                  <td>Ayong@gmail.com</td>
+                  <td>ADMIN</td>
+                  <td>
+                    <div class="table-button">
+                      <div class="text-end">
+                        <button type="button" class="btn btn-outline-primary">
+                          Edit
+                        </button>
                         <button type="button" class="btn btn-outline-primary">
                           View
                         </button>
@@ -351,25 +417,36 @@
                     </div>
                   </td>
                 </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Ayong</td>
-                  <td>Ayong@gmail.com</td>
-
-                  <td>@twitter</td>
+                <tr style="vertical-align: baseline">
+                  <th scope="row" style="padding: 1rem">4</th>
+                  <td>Nilam</td>
+                  <td>Nilam@gmail.com</td>
+                  <td>MEMBER</td>
                   <td>
                     <div class="table-button">
                       <div class="text-end">
-                        <button
-                          type="button"
-                          class="btn btn-outline-primary btn-edit"
-                        >
+                        <button type="button" class="btn btn-outline-primary">
                           Edit
                         </button>
-                        <button
-                          type="button"
-                          class="btn btn-outline-primary btn-table"
-                        >
+                        <button type="button" class="btn btn-outline-primary">
+                          View
+                        </button>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr style="vertical-align: baseline">
+                  <th scope="row" style="padding: 1rem">5</th>
+                  <td>Shifa</td>
+                  <td>Shifa@gmail.com</td>
+                  <td>ADMIN</td>
+                  <td>
+                    <div class="table-button">
+                      <div class="text-end">
+                        <button type="button" class="btn btn-outline-primary">
+                          Edit
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
                           View
                         </button>
                       </div>
