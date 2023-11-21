@@ -1,0 +1,66 @@
+/* SECTION ADD PERSON */
+.main-content-add-person {
+  width: 100%;
+  position: relative;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 360px;
+  padding-right: 50px;
+  /* z-index: -1; */
+}
+
+.title {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #333;
+  padding-top: 4.8rem;
+}
+
+.person-form {
+  padding-top: 5.2rem;
+  width: 100%;
+}
+
+/* FORM ADD PERSON */
+.person-form label {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.person-form input {
+  font-size: 1.6rem;
+  /* font-weight: 500; */
+  padding: 1rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+}
+
+.form-padding {
+  /* padding-top: 2rem; */
+  /* margin: 1.6rem; */
+  margin: 1.8rem 3.2rem;
+}
+
+.select-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  /* padding: 1rem; */
+}
+
+.select-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+}
+
+.box-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+}
+
+/* .label-text {
+  font-size: 1.8rem;
+} */
+
+.select-text {
+  font-size: 1.8rem;
+}

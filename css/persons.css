@@ -1,16 +1,6 @@
-/****************/
-/* SECTION PERSONS*/
-/****************/
-
-/* .section-dashboard {
-  background-color: #edf2ff;
-  height: 100vh;
-  z-index: 9999;
-  position: absolute;
-  right: 0;
-  left: auto;
-} */
-
+/*******************/
+/* SECTION PERSONS */
+/*******************/
 /* .section-persons {
   position: fixed;
   top: 72px;
@@ -60,7 +50,7 @@ label {
   bottom: 0;
   padding-left: 360px;
   padding-right: 50px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .search-box {
@@ -68,17 +58,15 @@ label {
 }
 
 .persons-box {
-  /* display: flex;
-  justify-content: space-between; */
   align-items: center;
   padding-top: 4.8rem;
 }
 
 /* STYLE DASHBOARD TEST */
-.home-box {
+/* .home-box {
   display: grid;
   grid-template-columns: 1fr 5fr;
-}
+} */
 
 .main-nav-test {
   border-right: 0.1rem solid rgba(0, 0, 0, 0.705);
@@ -132,10 +120,9 @@ label {
   overflow-x: scroll;
 }
 
-/*******************/
+/*********/
 /* TABLE */
-/*******************/
-
+/*********/
 /* .table > :not(caption) > * > * {
   padding: 2rem;
   background: none;
@@ -193,3 +180,12 @@ th td {
 } */
 
 /* btn */
+
+.select-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+}
+
+.dropdown-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+}

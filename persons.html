@@ -6,7 +6,6 @@
     <title>Persons-PMA</title>
 
     <!-- LINK CSS FILE -->
-    <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/persons.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -32,6 +31,8 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
@@ -53,8 +54,9 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
     <header class="sticky-top">
-      <nav class="navbar bg-body-tertiary header-background">
+      <nav class="navbar bg-body-tertiary navbar-background">
         <div class="container-fluid">
           <div class="d-flex align-items-center">
             <button
@@ -106,13 +108,13 @@
                   </p>
                   <ul class="main-nav-list">
                     <li>
-                      <a class="main-nav-link dahsboard-link" href="#">
+                      <a class="main-nav-link" href="dashboard.html">
                         <ion-icon name="speedometer"></ion-icon>
                         Dashboard</a
                       >
                     </li>
                     <li>
-                      <a class="main-nav-link persons-link" href="#">
+                      <a class="main-nav-link" style="color: #364fc7" href="#">
                         <ion-icon name="people"></ion-icon>
                         Persons
                       </a>
@@ -191,7 +193,7 @@
             <nav class="main-nav main-nav-padding">
               <ul class="main-nav-list">
                 <li>
-                  <a class="main-nav-link dahsboard-link" href="#">
+                  <a class="main-nav-link" href="dashboard.html">
                     <ion-icon
                       name="speedometer"
                       role="img"
@@ -201,7 +203,7 @@
                   >
                 </li>
                 <li>
-                  <a class="main-nav-link persons-link" href="#">
+                  <a class="main-nav-link" style="color: #364fc7" href="#">
                     <ion-icon
                       name="people"
                       role="img"
@@ -248,7 +250,7 @@
               <hr />
               <a
                 href="#"
-                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                class="d-flex align-items-center text-white text-decoration-none dropdown-toggle dropdown-img"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
@@ -281,23 +283,61 @@
               <h3 class="box-title">Persons</h3>
             </div>
             <div class="add-button">
-              <button class="btn-a btn--full btn-add">+Add</button>
+              <a class="add" href="add-person.html">
+                <button class="btn-a btn--full btn-add">+Add</button>
+              </a>
             </div>
           </div>
 
           <div class="search-box">
-            <div class="form">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2 form"
-                  type="search"
-                  placeholder="Search..."
-                  aria-label="Search"
-                />
-                <button type="button" class="btn btn-outline-primary">
-                  Search
+            <div class="d-flex">
+              <div class="dropdown" style="margin-right: 1rem">
+                <button
+                  class="btn btn-secondary dropdown-toggle form"
+                  style="
+                    padding: 1.5rem;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    background-color: #364fc7;
+                    border: none;
+                  "
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Search by age
                 </button>
-              </form>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item dropdown-text" href="#"
+                      >Productive ages</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-text" href="#"
+                      >Passed away</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown-text" href="#">Todler</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div style="width: 100%">
+                <form class="form d-flex" role="search">
+                  <input
+                    class="form-control me-2 form"
+                    type="search"
+                    placeholder="Search..."
+                    aria-label="Search"
+                    required
+                  />
+                  <button type="submit" class="btn btn-outline-primary">
+                    Search
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
 

@@ -567,3 +567,18 @@
 
   </body>
 </html>
+
+<!-- box-shadow -->
+
+/_ box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075); _/
+/_ box-shadow: 7px 10px 5px -7px rgba(0, 0, 0, 0.1); _/
+
+/_ background-image: linear-gradient(to right bottom, white, #4c6ef5); _/
+/_ background: linear-gradient(to right, #fff, #5c6cff); _/
+/_ background: linear-gradient(to right, #bac8ff, #748ffc); _/
+/_ background: linear-gradient(to right bottom, #748ffc, #fff); _/
+/_ background: linear-gradient(to right bottom, #5c6cff, #fff); _/
+/_ background-color: #748ffc; _/
+/_ background-color: #bac8ff; _/
+/_ background-color: #4263eb; _/
+/_ background-color: rgba(0, 0, 0, 0.45); _/
