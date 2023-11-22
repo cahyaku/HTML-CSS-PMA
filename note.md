@@ -582,3 +582,23 @@
 /_ background-color: #bac8ff; _/
 /_ background-color: #4263eb; _/
 /_ background-color: rgba(0, 0, 0, 0.45); _/
+
+ <div
+                      class="form-check form-switch check-padding"
+                      style="padding: 2rem 4rem"
+                    >
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckChecked"
+                        checked
+                        style="width: 4rem; margin-right: 0.5rem; border: none"
+                      />
+                      <label
+                        class="form-check-label label-text"
+                        style="font-size: 1.8rem"
+                        for="flexSwitchCheckChecked"
+                        >Checked switch checkbox input</label
+                      >
+                    </div>

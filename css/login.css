@@ -23,15 +23,12 @@
 }
 
 .cta-text-box {
-  /* padding: 2.4rem 4rem; */
   padding: 2.4rem 6rem 0rem 1rem;
 }
 
 .cta-heading {
   background-color: #3b5bdb;
-  /* background-color: #edf2ff; */
   text-transform: uppercase;
-  /* font-size: 1.8rem; */
   font-size: 2.2rem;
   letter-spacing: 0.1rem;
   text-align: center;
@@ -49,12 +46,9 @@
   align-items: center;
   padding: 1rem;
   font-size: 22rem;
-  /* color: #adb5bd; */
-  /* color: #dee2e6; */
   color: #ced4da;
   align-self: center;
   justify-self: center;
-  /* color: #e9ecef; */
 }
 
 .cta-form {
@@ -70,8 +64,7 @@
   border-radius: 9px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
   color: inherit;
-  /* background-color: #edf2ff; */
-  padding: 1.2rem;
+  padding: 0.8rem;
   font-family: inherit;
   font-size: 1.6rem;
 }
@@ -89,8 +82,8 @@
 
 .cta-form label {
   display: block;
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: bold;
   margin-bottom: 1.2rem;
 }
 
@@ -117,7 +110,7 @@
   padding-top: 2rem;
   padding-left: 2rem;
   text-align: left;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   justify-items: center;
 }
 

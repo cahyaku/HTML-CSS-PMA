@@ -8,7 +8,6 @@
   bottom: 0;
   padding-left: 360px;
   padding-right: 50px;
-  /* z-index: -1; */
 }
 
 .title {
@@ -25,28 +24,46 @@
 
 /* FORM ADD PERSON */
 .person-form label {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* .person-form input {
+  font-size: 1.6rem;
+  font-weight: 500;
+} */
+
+.person-form .input-data {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.person-form .i-text {
+  font-size: 1.8rem;
+}
+
+.person-form .select-text {
+  font-size: 1.4rem;
   font-weight: 500;
   color: #333;
 }
 
-.person-form input {
-  font-size: 1.6rem;
-  /* font-weight: 500; */
-  padding: 1rem;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
-}
-
 .form-padding {
-  /* padding-top: 2rem; */
-  /* margin: 1.6rem; */
   margin: 1.8rem 3.2rem;
 }
 
-.select-title {
+/* .i-text {
+  font-size: 3.2rem;
+}
+
+textarea {
+  font-size: 1.8rem;
+} */
+
+/* .select-title {
   font-size: 2.4rem;
   font-weight: 700;
-  /* padding: 1rem; */
 }
 
 .select-shadow {
@@ -55,12 +72,18 @@
 
 .box-shadow {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+  background: radial-gradient(circle, #fff, #f8f9fa);
 }
-
-/* .label-text {
-  font-size: 1.8rem;
-} */
 
 .select-text {
   font-size: 1.8rem;
+}
+
+.btn-padding {
+  margin-right: 3rem;
+  padding-bottom: 5rem;
+} */
+
+.has-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
 }

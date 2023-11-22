@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Persons-PMA</title>
+    <title>View-Person-PMA</title>
 
     <!-- LINK CSS FILE -->
+    <link rel="stylesheet" href="css/view-person.css" />
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/persons.css" />
     <link rel="stylesheet" href="css/queries.css" />
 
     <!-- LINK ION ICON -->
@@ -31,7 +31,6 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
@@ -108,13 +107,17 @@
                   </p>
                   <ul class="main-nav-list">
                     <li>
-                      <a class="main-nav-link" href="dashboard.html">
+                      <a
+                        class="main-nav-link"
+                        style="color: #364fc7"
+                        href="dashboard.html"
+                      >
                         <ion-icon name="speedometer"></ion-icon>
                         Dashboard</a
                       >
                     </li>
                     <li>
-                      <a class="main-nav-link" style="color: #364fc7" href="#">
+                      <a class="main-nav-link" href="persons.html">
                         <ion-icon name="people"></ion-icon>
                         Persons
                       </a>
@@ -140,7 +143,7 @@
                   </ul>
                 </nav>
 
-                <div class="dropdown dropdown-padding">
+                <div class="dropdown">
                   <hr />
                   <a
                     href="#"
@@ -185,15 +188,20 @@
     </header>
 
     <main>
-      <section class="section-persons d-flex">
+      <section class="section-View-person d-flex">
+        <!-- SIDEBAR -->
         <div class="sidebar-content d-none d-lg-flex">
           <div
-            class="d-flex flex-column justify-content-between sidebar-background"
+            class="offcanvas-body d-flex flex-column justify-content-between sidebar-background"
           >
             <nav class="main-nav main-nav-padding">
               <ul class="main-nav-list">
                 <li>
-                  <a class="main-nav-link" href="dashboard.html">
+                  <a
+                    class="main-nav-link"
+                    style="color: #364fc7"
+                    href="dashboard.html"
+                  >
                     <ion-icon
                       name="speedometer"
                       role="img"
@@ -203,7 +211,7 @@
                   >
                 </li>
                 <li>
-                  <a class="main-nav-link" style="color: #364fc7" href="#">
+                  <a class="main-nav-link" href="persons.html">
                     <ion-icon
                       name="people"
                       role="img"
@@ -277,171 +285,71 @@
         </div>
 
         <!-- MAIN CONTENT -->
-        <div class="main-content-persons">
-          <div class="persons-box d-flex justify-content-between">
-            <div class="person-header">
-              <h3 class="box-title">Persons</h3>
-            </div>
-            <div class="add-button">
-              <a class="add" href="add-person.html">
-                <button class="btn-a btn--full btn-add">+Add</button>
-              </a>
-            </div>
+        <div class="main-content-view-person d-flex flex-column">
+          <div class="person-title">
+            <h3 class="title">View person data</h3>
           </div>
 
-          <div class="search-box">
-            <div class="d-flex">
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle form dropdown-search"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Search by age
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item dropdown-text" href="#"
-                      >Productive ages</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item dropdown-text" href="#"
-                      >Passed away</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item dropdown-text" href="#">Toddler</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="container">
+            <div class="row">
+              <div class="person-data">
+                <p class="text-title">First name*</p>
+                <p class="data person-name">Cahya Kumala</p>
+                <p class="text-title">Last name*</p>
+                <p class="data person-name">Kumala Cahya</p>
+                <p class="text-title">NIK*</p>
+                <p class="data person-name">1234567890339933</p>
+                <p class="text-title">Email*</p>
+                <p class="data person-name">me@example.com</p>
+                <p class="text-title">Sex*</p>
+                <p class="data person-name">Female</p>
+                <p class="text-title">Address*</p>
+                <p class="data person-name">
+                  Br. Basangbe, Perean Kangin, Baturiti, Tabanan, Bali
+                </p>
+                <p class="text-title">Internal notes*</p>
 
-              <div class="search-person">
-                <form class="form d-flex" role="search">
-                  <input
-                    class="form-control me-2 form"
-                    type="search"
-                    placeholder="Search..."
-                    aria-label="Search"
-                    required
-                  />
-                  <button type="submit" class="btn btn-outline-primary">
-                    Search
+                <div class="text-end">
+                  <button
+                    type="submit"
+                    class="btn btn-outline-primary btn-edit"
+                    style="
+                      /* color: #fff; */
+                      font-size: 1.8rem;
+                      font-weight: bold;
+                      padding: 1rem 2rem;
+                    "
+                  >
+                    Edit
                   </button>
-                </form>
+                  <button
+                    type="reset"
+                    class="btn btn-secondary btn-back"
+                    style="
+                      /* color: #fff; */
+                      font-size: 1.8rem;
+                      font-weight: bold;
+                      padding: 1rem 2rem;
+                    "
+                  >
+                    Back
+                  </button>
+                  <button
+                    type="reset"
+                    class="btn btn-secondary"
+                    style="
+                      color: black;
+                      background-color: red;
+                      font-size: 1.8rem;
+                      font-weight: bold;
+                      padding: 1rem;
+                    "
+                  >
+                    Delete
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- <div class="scroll"> -->
-          <div class="table-responsive">
-            <table class="table table-hover">
-              <thead>
-                <tr class="test-color">
-                  <th scope="col">No</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Role</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="vertical-align: baseline">
-                  <th scope="row" style="padding: 1rem">1</th>
-                  <td>cahya@gmail.com</td>
-                  <td>Cahya</td>
-                  <td>ADMIN</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <button type="button" class="btn btn-outline-primary">
-                          Edit
-                        </button>
-
-                        <a class="view" href="view-person.html">
-                          <button type="button" class="btn btn-outline-primary">
-                            View
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr style="vertical-align: baseline">
-                  <th scope="row" style="padding: 1rem">2</th>
-                  <td>Kumala</td>
-                  <td>Kumala@gmail.com</td>
-                  <td>MEMBER</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <button type="button" class="btn btn-outline-primary">
-                          Edit
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          View
-                        </button>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr style="vertical-align: baseline">
-                  <th scope="row" style="padding: 1rem">3</th>
-                  <td>Ayong</td>
-                  <td>Ayong@gmail.com</td>
-                  <td>ADMIN</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <button type="button" class="btn btn-outline-primary">
-                          Edit
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          View
-                        </button>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr style="vertical-align: baseline">
-                  <th scope="row" style="padding: 1rem">4</th>
-                  <td>Nilam</td>
-                  <td>Nilam@gmail.com</td>
-                  <td>MEMBER</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <button type="button" class="btn btn-outline-primary">
-                          Edit
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          View
-                        </button>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr style="vertical-align: baseline">
-                  <th scope="row" style="padding: 1rem">5</th>
-                  <td>Shifa</td>
-                  <td>Shifa@gmail.com</td>
-                  <td>ADMIN</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <button type="button" class="btn btn-outline-primary">
-                          Edit
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          View
-                        </button>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </section>
