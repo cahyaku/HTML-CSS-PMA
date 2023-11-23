@@ -11,22 +11,23 @@
 }
 
 .title {
-  font-size: 3.6rem;
+  font-size: 2.4rem;
   font-weight: bold;
   color: #333;
-  padding-top: 4.8rem;
+  padding-top: 3rem;
 }
 
 .person-form {
-  padding-top: 5.2rem;
+  padding-top: 2.4rem;
   width: 100%;
 }
 
 /* FORM ADD PERSON */
 .person-form label {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
   color: #333;
+  margin-bottom: 0.2;
 }
 
 /* .person-form input {
@@ -35,22 +36,28 @@
 } */
 
 .person-form .input-data {
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .person-form .i-text {
-  font-size: 1.8rem;
+  font-size: 1rem;
 }
 
 .person-form .select-text {
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555;
+  background: radial-gradient(#fff, #f8f9fa);
+}
+
+.has-background {
+  background: radial-gradient(#fff, #f8f9fa);
 }
 
 .form-padding {
-  margin: 1.8rem 3.2rem;
+  margin: 0rem 2rem;
 }
 
 /* .i-text {

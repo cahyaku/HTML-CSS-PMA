@@ -5,8 +5,6 @@
 
   background-color: #fff;
   background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 120%);
-  /* background: radial-gradient(circle, #fff 0%, rgba(63, 94, 251, 1) 150%); */
-  /* background: radial-gradient(circle, #fff 0%, rgba(148, 187, 233, 1) 100%); */
   height: 100vh;
 }
 
@@ -19,26 +17,28 @@
   border-top-right-radius: 11px;
   border-top-left-radius: 11px;
   overflow: hidden;
-  padding-bottom: 2.4rem;
+  padding-bottom: 1.4rem;
 }
 
 .cta-text-box {
-  padding: 2.4rem 6rem 0rem 1rem;
+  padding: 1.4rem 2rem 2rem 2rem;
+  /* padding: 1.4rem 3rem 0rem 0.5rem; */
 }
 
 .cta-heading {
   background-color: #3b5bdb;
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
   letter-spacing: 0.1rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   color: #fff;
 }
 
 .cta-box {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1.5fr; */
   border-bottom: 1px solid rgba(0, 0, 0, 0.185);
 }
 
@@ -51,11 +51,11 @@
   justify-self: center;
 }
 
-.cta-form {
+/* .cta-form {
   margin-bottom: 2rem;
   display: grid;
   row-gap: 2.4rem;
-}
+} */
 
 .cta-form input,
 .cta-form select {
@@ -64,9 +64,11 @@
   border-radius: 9px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
   color: inherit;
-  padding: 0.8rem;
+  padding: 0.5rem;
   font-family: inherit;
-  font-size: 1.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .cta-form input::placeholder {
@@ -75,42 +77,53 @@
 
 .cta *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem #dee2e6;
-
+  box-shadow: 0 0 0 0.2rem #dee2e6;
   /* background: linear-gradient(to right, #fff, #f8f9fa); */
 }
 
 .cta-form label {
   display: block;
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
 }
 
-.btn--form {
+.cta-form .btn-login {
   background-color: #364fc7;
+  font-size: 1rem;
+  font-weight: bold;
   color: #fdf2e9;
   align-self: end;
   width: 100%;
+  margin-top: 1rem;
+  border-radius: 9px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+  transition: all 0.3s;
+  border: none;
+}
+
+.cta-form .btn-login:active,
+.cta-form .btn-login:hover {
+  background-color: #3b5bdb;
 }
 
 .cta-text {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   padding-left: 1rem;
   padding-top: 1rem;
 }
 
-.login-botton {
+/* .login-botton {
   padding-left: 2rem;
-}
+} */
 
 /* CTA LINK */
 .link {
   /* padding: 2rem; */
-  padding-top: 2rem;
-  padding-left: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 0.9rem;
   justify-items: center;
 }
 
@@ -137,6 +150,18 @@
 
 /* CTA LOGO  */
 .cta-logo {
+  /* align-self: center; */
+  padding: 1rem;
+}
+
+.logo-pma {
   align-self: center;
-  padding: 2rem;
+  width: 100%;
+}
+
+.PMA-title {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
