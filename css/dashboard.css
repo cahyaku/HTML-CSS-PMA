@@ -38,7 +38,6 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
-  /* padding-top: 0.5rem; */
   color: #333;
 }
 
@@ -48,6 +47,7 @@
 
 .dashboard-boxs {
   padding-top: 2.4rem;
+  margin-bottom: 5rem;
 }
 
 .card-box {
@@ -131,4 +131,17 @@
   background-color: #e9ecef;
   padding: 0.5rem;
   border-radius: 9px;
+}
+
+.has-shadow {
+  box-shadow: 0 5px 7px rgba(148, 187, 233, 1);
+}
+
+.dashboard-link:link,
+.dashboard-link:visited {
+  color: #364fc7;
+}
+
+.dashboard-box .card {
+  border: none;
 }

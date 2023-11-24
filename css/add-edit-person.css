@@ -1,5 +1,5 @@
 /* SECTION ADD PERSON */
-.main-content-add-person {
+/* .main-content-add-edit-person {
   width: 100%;
   position: relative;
   top: 10px;
@@ -8,26 +8,28 @@
   bottom: 0;
   padding-left: 360px;
   padding-right: 50px;
-}
+} */
 
 .title {
   font-size: 2.4rem;
   font-weight: bold;
   color: #333;
   padding-top: 3rem;
+  margin-left: 2rem;
 }
 
 .person-form {
-  padding-top: 2.4rem;
+  padding-top: 2rem;
   width: 100%;
 }
 
 /* FORM ADD PERSON */
-.person-form label {
+.person-form label,
+.check-text {
   font-size: 1.2rem;
   font-weight: 500;
   color: #333;
-  margin-bottom: 0.2;
+  margin-bottom: 0;
 }
 
 /* .person-form input {
@@ -38,11 +40,32 @@
 .person-form .input-data {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .person-form .i-text {
   font-size: 1rem;
+}
+
+.person-form .btn-save {
+  background-color: #364fc7;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-right: 0.5rem;
+  border: none;
+}
+
+.person-form .btn-save:active,
+.person-form .btn-save:hover {
+  background-color: #3b5bdb;
+}
+
+.person-form .btn-cancel {
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .person-form .select-text {
@@ -60,18 +83,18 @@
   margin: 0rem 2rem;
 }
 
-/* .i-text {
-  font-size: 3.2rem;
+.person-form .form-check-input:checked {
+  background-color: #364fc7;
+  border: none;
+  height: 20px;
+  width: 40px;
+  margin-right: 0.5rem;
 }
 
-textarea {
-  font-size: 1.8rem;
+/* .form-check .form-check-input {
+  height: 20px;
+  width: 50px;
 } */
-
-/* .select-title {
-  font-size: 2.4rem;
-  font-weight: 700;
-}
 
 .select-shadow {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
@@ -87,10 +110,24 @@ textarea {
 }
 
 .btn-padding {
-  margin-right: 3rem;
-  padding-bottom: 5rem;
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+}
+
+/* .has-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
 } */
 
 .has-shadow {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);
+  box-shadow: 0 3px 5px rgba(148, 187, 233, 1);
+}
+
+.persons-nav-link:link,
+.persons-nav-link:visited {
+  color: #364fc7;
+}
+
+.profile-nav-link:link,
+.profile-nav-link:visited {
+  color: #364fc7;
 }

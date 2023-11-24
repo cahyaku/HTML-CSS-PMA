@@ -148,11 +148,15 @@ body {
   padding-left: 0;
 }
 
+.main-nav-link {
+  color: #333;
+}
+
 .main-nav-link:link,
 .main-nav-link:visited {
   display: block;
   text-decoration: none;
-  color: #333;
+  /* color: #333; */
   /* font-size: 1.6rem; */
   font-weight: 600;
   padding: 0.5rem;
@@ -166,13 +170,17 @@ body {
   background-color: #fff;
 }
 
+.main-nav-link .dashboard-link {
+  color: red;
+}
+
 .dropdown-style {
   color: red;
 }
 
 .icon-header {
-  height: 3.2rem;
-  width: 3.2rem;
+  height: 2rem;
+  width: 2rem;
   color: #364fc7;
 }
 
@@ -225,7 +233,7 @@ body {
 }
 
 .offcanvas-header {
-  height: 70p;
+  height: 63px;
 }
 
 .offcanvas.offcanvas-start {
@@ -245,4 +253,26 @@ body {
 
 .dropdown-img {
   padding: 0 0 1rem 1rem;
+}
+
+.dropdown h6 {
+  margin-bottom: 0;
+}
+
+/* MAIN CONTENT POSITION */
+.main-content {
+  width: 100%;
+  position: relative;
+  top: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 360px;
+  padding-right: 50px;
+}
+
+/* person main nav link */
+.persons-nav-link:link,
+.persons-nav-link:visited {
+  color: #364fc7;
 }

@@ -101,7 +101,6 @@ label {
 
 .form button:hover,
 .form button:active {
-  /* background-color: #3b5bdb; */
   background-color: #364fc7;
 }
 
@@ -130,6 +129,25 @@ label {
   overflow: scroll;
 }
 
+.search-person {
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+.dropdown .btn-dropdown {
+  background-color: #364fc7;
+  border: none;
+}
+
+.dropdown .dropdown-menu {
+  background-color: #e9ecef;
+}
+
+.dropdown .dropdown-item {
+  color: #222;
+  font-weight: 500;
+}
+
 /*********/
 /* TABLE */
 /*********/
@@ -141,13 +159,6 @@ label {
   margin-top: 3.2rem;
 }
 
-/* table {
-  min-width: 600px;
-  vertical-align: baseline;
-  border: 0.1px solid #bdbcbc99;
-  margin-top: 3.2rem;
-} */
-
 thead tr {
   font-size: 1.4rem;
   background-color: #5c7cfa;
@@ -157,18 +168,12 @@ thead tr {
   width: 100%;
 }
 
-.search-person {
-  width: 100%;
-  margin-left: 0.5rem;
-}
-
-.dropdown .btn-dropdown {
-  background-color: #364fc7;
-  border: none;
-}
-
 th {
   padding: 1rem;
+}
+
+td {
+  padding-right: 1rem;
 }
 
 tbody tr:nth-child(odd) {
@@ -184,4 +189,34 @@ tbody {
   font-size: 1rem;
   line-height: 1.8;
   font-weight: 500;
+}
+
+/* BUTTON ADD & EDIT */
+
+.text-end .btn-view {
+  background-color: #364fc7;
+  border: none;
+  color: #fff;
+}
+
+.btn-table {
+  text-decoration: none;
+}
+
+/* .has-shadow {
+  box-shadow: 0 3px 5px rgb(119, 154, 194);
+} */
+
+.btn-text {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn-text-edit {
+  text-decoration: none;
+}
+
+.btn-space {
+  margin-right: 0.5rem;
 }
