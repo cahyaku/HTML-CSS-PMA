@@ -2,13 +2,14 @@
 /* SECTION DASHBOARD */
 /*********************/
 
-/* .section-dashboard { */
-/* position: fixed;
+.section-dashboard {
+  /* position: fixed;
   top: 72px;
   left: 0;
   right: 0;
   bottom: 0; */
-/* } */
+  background-color: #f8f9fa;
+}
 
 .main-content-dashboard {
   width: 100%;
@@ -85,16 +86,11 @@
   font-size: 0.9rem;
   font-weight: 500;
   color: #111;
-  /* padding: 0 0.5rem; */
 }
 
 .card-title {
   color: none;
 }
-
-/* .card-title-box {
-  padding: 0.5rem;
-} */
 
 .title {
   font-size: 2.8rem;

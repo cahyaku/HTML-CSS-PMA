@@ -84,17 +84,12 @@
 }
 
 .person-form .form-check-input:checked {
+  /* height: 20px;
+  width: 40px; */
   background-color: #364fc7;
   border: none;
-  height: 20px;
-  width: 40px;
   margin-right: 0.5rem;
 }
-
-/* .form-check .form-check-input {
-  height: 20px;
-  width: 50px;
-} */
 
 .select-shadow {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.212);

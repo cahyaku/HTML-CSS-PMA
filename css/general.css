@@ -124,15 +124,21 @@ body {
   color: #364fc7;
 }
 
-.logo-PMA {
+/* .logo-PMA {
   width: 100%;
   align-self: center;
+} */
+
+.logo-pma {
+  width: 3.5rem;
+  height: 3.5rem;
+  align-self: center;
+  margin-right: 0.5rem;
 }
 
 .person-icon {
   height: 1.8rem;
   width: 1.8rem;
-  /* font-size: 2.8rem; */
   color: #364fc7;
   background-color: #fff;
   padding: 0.5rem;
@@ -156,12 +162,9 @@ body {
 .main-nav-link:visited {
   display: block;
   text-decoration: none;
-  /* color: #333; */
-  /* font-size: 1.6rem; */
   font-weight: 600;
   padding: 0.5rem;
   margin: 0rem 1rem 1rem 1rem;
-  /* margin: 2rem; */
   transition: all 0.3s;
 }
 
@@ -182,6 +185,7 @@ body {
   height: 2rem;
   width: 2rem;
   color: #364fc7;
+  margin-right: 0.5rem;
 }
 
 .main-nav-person {
@@ -275,4 +279,28 @@ body {
 .persons-nav-link:link,
 .persons-nav-link:visited {
   color: #364fc7;
+}
+
+.PMA-title {
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.sidebar-padding {
+  padding-top: 1rem;
+}
+
+.my-acount {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.my-acount-padding {
+  padding-left: 1.4rem;
+}
+
+.sidebar-padding-li {
+  padding-left: 2rem;
 }

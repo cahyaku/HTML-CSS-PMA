@@ -1,8 +1,6 @@
 /* CTA SECTION */
 .section-cta {
-  /* padding: 4.8rem 0 9.6rem 0; */
   padding: 9.6rem 0;
-
   background-color: #fff;
   background: linear-gradient(#fff 0%, rgba(63, 94, 251, 1) 120%);
   height: 100vh;
@@ -10,7 +8,6 @@
 
 .cta {
   box-shadow: 0 2.4rem 1.8rem rgba(0, 0, 0, 0.267);
-  /* background-color: #edf2ff; */
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -18,16 +15,17 @@
   border-top-left-radius: 11px;
   overflow: hidden;
   padding-bottom: 1.4rem;
-  margin: 0 3rem;
+  margin: 3rem 2rem;
 }
 
 .cta-text-box {
-  padding: 1.4rem 2rem 2rem 2rem;
+  padding: 1.4rem 2rem 1.4rem 2rem;
   /* padding: 1.4rem 3rem 0rem 0.5rem; */
 }
 
 .cta-heading {
-  background-color: #3b5bdb;
+  background-color: #364fc7;
+  /* background-color: #3b5bdb; */
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: bold;
@@ -42,21 +40,6 @@
   grid-template-columns: 1fr 1.5fr; */
   border-bottom: 1px solid rgba(0, 0, 0, 0.185);
 }
-
-/* .cta-icon {
-  align-items: center;
-  padding: 1rem;
-  font-size: 22rem;
-  color: #ced4da;
-  align-self: center;
-  justify-self: center;
-} */
-
-/* .cta-form {
-  margin-bottom: 2rem;
-  display: grid;
-  row-gap: 2.4rem;
-} */
 
 .cta-form input,
 .cta-form select {
@@ -79,7 +62,6 @@
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.2rem #dee2e6;
-  /* background: linear-gradient(to right, #fff, #f8f9fa); */
 }
 
 .cta-form label {
@@ -114,13 +96,8 @@
   padding-top: 1rem;
 }
 
-/* .login-botton {
-  padding-left: 2rem;
-} */
-
 /* CTA LINK */
 .link {
-  /* padding: 2rem; */
   padding-top: 1.5rem;
   padding-left: 1rem;
   text-align: left;
@@ -151,18 +128,17 @@
 
 /* CTA LOGO  */
 .cta-logo {
-  /* align-self: center; */
-  padding: 1rem;
+  /* margin: 1.4rem; */
+  padding: 1.4rem;
 }
 
-.logo-pma {
-  align-self: center;
+.logo-pma-login {
   width: 100%;
 }
 
 .PMA-title {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }

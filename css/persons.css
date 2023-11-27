@@ -16,6 +16,10 @@
   font-weight: bold;
 }
 
+.add .btn-add:hover {
+  background: color #3b3b3b;
+}
+
 /* .add .btn-add:active,
 .add .btn-add:hover {
   background-color: #364fc7;
@@ -151,7 +155,6 @@ label {
 /*********/
 /* TABLE */
 /*********/
-
 .table-primary {
   min-width: 600px;
   vertical-align: baseline;
@@ -192,7 +195,6 @@ tbody {
 }
 
 /* BUTTON ADD & EDIT */
-
 .text-end .btn-view {
   background-color: #364fc7;
   border: none;
@@ -219,4 +221,9 @@ tbody {
 
 .btn-space {
   margin-right: 0.5rem;
+}
+
+/* PAGINATION */
+.page-position {
+  margin: 2rem 0;
 }

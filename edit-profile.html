@@ -3,6 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="logo-pma/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="logo-pma/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="logo-pma/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="logo-pma/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="logo-pma/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="logo-pma/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="logo-pma/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="logo-pma/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="logo-pma/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="logo-pma/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="logo-pma/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="logo-pma/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="logo-pma/favicon-16x16.png"
+    />
+    <link rel="manifest" href="logo-pma/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Edit-Profile-PMA</title>
 
     <!-- LINK CSS FILE -->
@@ -48,8 +122,13 @@
             >
               <ion-icon class="icon-header" name="menu"></ion-icon>
             </button>
-            <div>
-              <h2 class="PMA">LOGO PMA</h2>
+            <div class="d-flex">
+              <div class="logo-pma">
+                <img src="img/logo-pma-3.png" class="logo-pma" />
+              </div>
+              <p class="d-none d-md-flex PMA-title align-items-center">
+                <strong class="PMA">PMA</strong>- Persons Management App
+              </p>
             </div>
             <div
               class="offcanvas offcanvas-start"
@@ -60,14 +139,14 @@
               aria-labelledby="offcanvasScrollingLabel"
             >
               <div class="offcanvas-header">
-                <div class="d-flex align-items-center gx-2">
-                  <h1>LOGO</h1>
-                  <h2
-                    class="offcanvas-title heading-secondary"
-                    id="offcanvasScrollingLabel"
-                  >
-                    <strong class="PMA">PMA</strong>
-                  </h2>
+                <div class="d-flex align-items-center gx-2 sidebar-padding">
+                  <div class="logo-pma">
+                    <img src="img/logo-pma-3.png" class="logo-pma" />
+                  </div>
+                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                    <strong class="PMA">PMA</strong><br />
+                    Persons Management App
+                  </h5>
                 </div>
                 <button
                   class="btn-nav"
@@ -99,13 +178,10 @@
                         Persons
                       </a>
                     </li>
-                    <li>
-                      <a class="main-nav-link account-link" href="#">
-                        <ion-icon name="person-circle"></ion-icon>
-                        My Account</a
-                      >
+                    <li class="my-acount-padding">
+                      <p class="my-acount">My Account</p>
                     </li>
-                    <li>
+                    <li class="sidebar-padding-li">
                       <a
                         class="main-nav-link profile-nav-link"
                         href="edit-profile.html"
@@ -114,7 +190,7 @@
                         Edit Profil
                       </a>
                     </li>
-                    <li>
+                    <li class="sidebar-padding-li">
                       <a class="main-nav-link logout-link" href="#">
                         <ion-icon name="log-out"></ion-icon>
                         Logout</a
@@ -196,17 +272,10 @@
                     Persons
                   </a>
                 </li>
-                <li>
-                  <a class="main-nav-link account-link" href="#">
-                    <ion-icon
-                      name="person-circle"
-                      role="img"
-                      class="md hydrated"
-                    ></ion-icon>
-                    My Account</a
-                  >
+                <li class="my-acount-padding">
+                  <p class="my-acount">My Account</p>
                 </li>
-                <li>
+                <li class="sidebar-padding-li">
                   <a
                     class="main-nav-link profile-nav-link"
                     href="edit-profile.html"
@@ -220,7 +289,7 @@
                     Edit Profil
                   </a>
                 </li>
-                <li>
+                <li class="sidebar-padding-li">
                   <a class="main-nav-link logout-link" href="#">
                     <ion-icon
                       name="log-out"
@@ -351,6 +420,7 @@
                           class="form-control has-shadow input-data has-background"
                           id="exampleFormControlInput1"
                           placeholder="Birth date"
+                          value="2005-08-03"
                           required
                         />
                       </div>
