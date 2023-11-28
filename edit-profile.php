@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- FAVICON -->
     <link
       rel="apple-touch-icon"
@@ -78,13 +77,12 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
-
-    <title>Persons-PMA</title>
+    <title>Edit-Profile-PMA</title>
 
     <!-- LINK CSS FILE -->
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/persons.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="Assets/css/add-edit-person.css" />
+    <link rel="stylesheet" href="Assets/css/general.css" />
+    <link rel="stylesheet" href="Assets/css/queries.css" />
 
     <!-- LINK ION ICON -->
     <script
@@ -107,13 +105,12 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
     <header class="header-position-fixed sticky-top">
-      <nav class="navbar bg-body-tertiary navbar-background sticky-top">
+      <nav class="navbar bg-body-tertiary navbar-background">
         <div class="container-fluid">
           <div class="d-flex align-items-center">
             <button
@@ -176,7 +173,7 @@
                       >
                     </li>
                     <li>
-                      <a class="main-nav-link" style="color: #364fc7" href="#">
+                      <a class="main-nav-link" href="persons.html">
                         <ion-icon name="people"></ion-icon>
                         Persons
                       </a>
@@ -186,7 +183,7 @@
                     </li>
                     <li class="sidebar-padding-li">
                       <a
-                        class="main-nav-link edit-profile-link"
+                        class="main-nav-link profile-nav-link"
                         href="edit-profile.html"
                       >
                         <ion-icon clas="nav-icon" name="create"></ion-icon>
@@ -202,7 +199,7 @@
                   </ul>
                 </nav>
 
-                <div class="dropdown dropdown-padding">
+                <div class="dropdown">
                   <hr />
                   <a
                     href="#"
@@ -247,10 +244,11 @@
     </header>
 
     <main>
-      <section class="section-persons d-flex">
+      <section class="section-edit-person d-flex">
+        <!-- SIDEBAR -->
         <div class="sidebar-content d-none d-lg-flex">
           <div
-            class="d-flex flex-column justify-content-between sidebar-background"
+            class="offcanvas-body d-flex flex-column justify-content-between sidebar-background"
           >
             <nav class="main-nav main-nav-padding">
               <ul class="main-nav-list">
@@ -265,7 +263,7 @@
                   >
                 </li>
                 <li>
-                  <a class="main-nav-link" style="color: #364fc7" href="#">
+                  <a class="main-nav-link" href="persons.html">
                     <ion-icon
                       name="people"
                       role="img"
@@ -279,7 +277,7 @@
                 </li>
                 <li class="sidebar-padding-li">
                   <a
-                    class="main-nav-link edit-profile-link"
+                    class="main-nav-link profile-nav-link"
                     href="edit-profile.html"
                   >
                     <ion-icon
@@ -319,7 +317,7 @@
                   height="32"
                   class="rounded-circle me-2"
                 />
-                <h6><strong>mdo</strong></h6>
+                <h6><srtong>mdo</srtong></h6>
               </a>
               <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                 <li>
@@ -335,207 +333,167 @@
         </div>
 
         <!-- MAIN CONTENT -->
-        <div class="main-content-persons">
-          <div class="persons-box d-flex justify-content-between">
-            <div class="person-header">
-              <h3 class="box-title">Persons</h3>
-            </div>
-            <div class="add-button">
-              <a class="add" href="add-person.html">
-                <button type="button" class="btn btn-outline-primary btn-add">
-                  +Add
-                </button>
-              </a>
-            </div>
-          </div>
+        <div class="main-content d-flex flex-column">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-12 col-xl-12 col-md-12">
+                <div class="person-title">
+                  <h3 class="title">My Profile</h3>
+                </div>
+                <form class="person-form" action="#">
+                  <div class="d-md-flex">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mb-3 form-padding">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >First name*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control has-shadow input-data has-background"
+                          id="exampleFormControlInput1"
+                          placeholder="First name"
+                          value="I Gusti Ayu"
+                          required
+                        />
+                      </div>
+                    </div>
 
-          <div class="search-box">
-            <div class="d-flex">
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle btn-dropdown"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Search by age
-                </button>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Productive ages</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Passed away</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Toddler</a>
-                  </li>
-                </ul>
-              </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mb-3 form-padding">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >Last name*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control has-shadow input-data has-background"
+                          id="exampleFormControlInput1"
+                          placeholder="name@example.com"
+                          value="Cahya Kumala"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
 
-              <div class="search-person">
-                <form class="form d-flex" role="search">
-                  <input
-                    class="form-control me-2 has-shadow"
-                    type="search"
-                    placeholder="Search..."
-                    aria-label="Search"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    class="btn btn-outline-primary has-shadow"
-                  >
-                    Search
-                  </button>
+                  <div class="d-md-flex">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mb-3 form-padding">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >NIK*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control has-shadow input-data has-background"
+                          id="exampleFormControlInput1"
+                          placeholder="NIK"
+                          value="1234567891333441"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mb-3 form-padding">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >Email*</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control has-shadow input-data has-background"
+                          id="exampleFormControlInput1"
+                          placeholder="me@example.com"
+                          value="cahya@kumala.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-md-flex">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mb-3 form-padding">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >Birth date*</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control has-shadow input-data has-background"
+                          id="exampleFormControlInput1"
+                          placeholder="Birth date"
+                          value="2005-08-03"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="form-padding">
+                        <label for="Role" class="form-label">Sex</label>
+                        <select
+                          class="form-select form-select-lg mb-3 has-shadow select-text"
+                          aria-label="Large select example"
+                        >
+                          <option selected>Open this select menu</option>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-md-flex">
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mb-3 form-padding">
+                        <label for="exampleFormControlInput1" class="form-label"
+                          >Address*</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control has-shadow input-data has-background"
+                          id="exampleFormControlInput1"
+                          placeholder="Address"
+                          value="Br.Basangbe, Perean Kangin, Baturiti, Tabanan, Bali"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                      <div class="mb-3 text-area form-padding">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                        >
+                          Internal notes
+                          <ion-icon name="pencil"></ion-icon>
+                        </label>
+                        <textarea
+                          class="form-control i-text has-background has-shadow"
+                          id="exampleFormControlTextarea1"
+                          rows="1"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-end btn-padding">
+                    <button
+                      type="submit"
+                      class="btn btn-outline-primary btn-save"
+                    >
+                      Save
+                    </button>
+                    <a class="cancel" href="persons.html">
+                      <button
+                        type="button"
+                        class="btn btn-secondary btn-cancel"
+                      >
+                        Cancel
+                      </button>
+                    </a>
+                  </div>
                 </form>
               </div>
             </div>
-          </div>
-
-          <!-- <div class="scroll"> -->
-          <div class="table-responsive">
-            <table class="table-primary table-width">
-              <thead>
-                <tr class="test-color">
-                  <th scope="col">No</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Role</th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="vertical-align: baseline">
-                  <th scope="row">1</th>
-                  <td>cahya@gmail.com</td>
-                  <td>Cahya</td>
-                  <td>ADMIN</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <a class="edit btn-table" href="edit-person.html">
-                          <button type="button" class="btn btn-outline-primary">
-                            Edit
-                          </button>
-                        </a>
-
-                        <a class="view btn-table" href="view-person.html">
-                          <button type="button" class="btn btn-outline-primary">
-                            View
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr style="vertical-align: baseline">
-                  <th scope="row">2</th>
-                  <td>Kumala@a.com</td>
-
-                  <td>Kumala</td>
-                  <td>MEMBER</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <a class="edit btn-table" href="edit-person.html">
-                          <button type="button" class="btn btn-outline-primary">
-                            Edit
-                          </button>
-                        </a>
-                        <a class="view btn-table" href="view-person.html">
-                          <button type="button" class="btn btn-outline-primary">
-                            View
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr style="vertical-align: baseline">
-                  <th scope="row">3</th>
-                  <td>Ayong@gmail.com</td>
-                  <td>Ayong</td>
-                  <td>ADMIN</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <a class="edit btn-table" href="edit-person.html">
-                          <button type="button" class="btn btn-outline-primary">
-                            Edit
-                          </button>
-                        </a>
-
-                        <a class="view btn-table" href="view-person.html">
-                          <button type="button" class="btn btn-outline-primary">
-                            View
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr style="vertical-align: baseline">
-                  <th scope="row">4</th>
-                  <td>Nilam@gmail.com</td>
-                  <td>Nilam</td>
-                  <td>MEMBER</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <button type="button" class="btn btn-outline-primary">
-                          Edit
-                        </button>
-                        <button type="button" class="btn btn-outline-primary">
-                          View
-                        </button>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr style="vertical-align: baseline">
-                  <th scope="row">5</th>
-                  <td>Shifa@gmail.com</td>
-                  <td>Shifa</td>
-                  <td>ADMIN</td>
-                  <td>
-                    <div class="table-button">
-                      <div class="text-end">
-                        <a class="edit btn-table" href="edit-person.html">
-                          <button type="button" class="btn btn-outline-primary">
-                            Edit
-                          </button>
-                        </a>
-
-                        <a class="view btn-table" href="view-person.html">
-                          <button type="button" class="btn btn-outline-primary">
-                            View
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="page-position">
-            <nav aria-label="Page navigation example">
-              <ul class="pagination justify-content-center">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
           </div>
         </div>
       </section>

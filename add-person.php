@@ -77,12 +77,12 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Edit-Profile-PMA</title>
+    <title>Add-Person-PMA</title>
 
     <!-- LINK CSS FILE -->
-    <link rel="stylesheet" href="css/add-edit-person.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="Assets/css/add-edit-person.css" />
+    <link rel="stylesheet" href="Assets/css/general.css" />
+    <link rel="stylesheet" href="Assets/css/queries.css" />
 
     <!-- LINK ION ICON -->
     <script
@@ -173,7 +173,10 @@
                       >
                     </li>
                     <li>
-                      <a class="main-nav-link" href="persons.html">
+                      <a
+                        class="main-nav-link persons-nav-link"
+                        href="persons.html"
+                      >
                         <ion-icon name="people"></ion-icon>
                         Persons
                       </a>
@@ -183,7 +186,7 @@
                     </li>
                     <li class="sidebar-padding-li">
                       <a
-                        class="main-nav-link profile-nav-link"
+                        class="main-nav-link edit-profile-link"
                         href="edit-profile.html"
                       >
                         <ion-icon clas="nav-icon" name="create"></ion-icon>
@@ -209,7 +212,7 @@
                   >
                     <img
                       src="https://github.com/mdo.png"
-                      alt=""
+                      alt="picture"
                       width="32"
                       height="32"
                       class="rounded-circle me-2"
@@ -244,7 +247,7 @@
     </header>
 
     <main>
-      <section class="section-edit-person d-flex">
+      <section class="section-add-person d-flex">
         <!-- SIDEBAR -->
         <div class="sidebar-content d-none d-lg-flex">
           <div
@@ -263,7 +266,7 @@
                   >
                 </li>
                 <li>
-                  <a class="main-nav-link" href="persons.html">
+                  <a class="main-nav-link persons-nav-link" href="persons.html">
                     <ion-icon
                       name="people"
                       role="img"
@@ -277,7 +280,7 @@
                 </li>
                 <li class="sidebar-padding-li">
                   <a
-                    class="main-nav-link profile-nav-link"
+                    class="main-nav-link edit-profile-link"
                     href="edit-profile.html"
                   >
                     <ion-icon
@@ -338,7 +341,7 @@
             <div class="row">
               <div class="col-12 col-lg-12 col-xl-12 col-md-12">
                 <div class="person-title">
-                  <h3 class="title">My Profile</h3>
+                  <h3 class="title">Add person</h3>
                 </div>
                 <form class="person-form" action="#">
                   <div class="d-md-flex">
@@ -352,7 +355,6 @@
                           class="form-control has-shadow input-data has-background"
                           id="exampleFormControlInput1"
                           placeholder="First name"
-                          value="I Gusti Ayu"
                           required
                         />
                       </div>
@@ -367,8 +369,7 @@
                           type="text"
                           class="form-control has-shadow input-data has-background"
                           id="exampleFormControlInput1"
-                          placeholder="name@example.com"
-                          value="Cahya Kumala"
+                          placeholder="Last name"
                           required
                         />
                       </div>
@@ -386,7 +387,6 @@
                           class="form-control has-shadow input-data has-background"
                           id="exampleFormControlInput1"
                           placeholder="NIK"
-                          value="1234567891333441"
                           required
                         />
                       </div>
@@ -402,7 +402,6 @@
                           class="form-control has-shadow input-data has-background"
                           id="exampleFormControlInput1"
                           placeholder="me@example.com"
-                          value="cahya@kumala.com"
                           required
                         />
                       </div>
@@ -420,7 +419,6 @@
                           class="form-control has-shadow input-data has-background"
                           id="exampleFormControlInput1"
                           placeholder="Birth date"
-                          value="2005-08-03"
                           required
                         />
                       </div>
@@ -452,29 +450,55 @@
                           class="form-control has-shadow input-data has-background"
                           id="exampleFormControlInput1"
                           placeholder="Address"
-                          value="Br.Basangbe, Perean Kangin, Baturiti, Tabanan, Bali"
                           required
                         />
                       </div>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-6">
-                      <div class="mb-3 text-area form-padding">
-                        <label
-                          for="exampleFormControlTextarea1"
-                          class="form-label"
+                      <div class="form-padding">
+                        <label for="Role" class="form-label">Role</label>
+                        <select
+                          class="form-select form-select-lg mb-3 has-shadow select-text"
+                          aria-label="Large select example "
                         >
-                          Internal notes
-                          <ion-icon name="pencil"></ion-icon>
-                        </label>
-                        <textarea
-                          class="form-control i-text has-background has-shadow"
-                          id="exampleFormControlTextarea1"
-                          rows="1"
-                        ></textarea>
+                          <option selected>Open this select menu</option>
+                          <option value="1">Admin</option>
+                          <option value="2">Member</option>
+                        </select>
                       </div>
                     </div>
                   </div>
+
+                  <!-- <div class="col-12"> -->
+                  <div class="mb-3 text-area form-padding">
+                    <label for="exampleFormControlTextarea1" class="form-label">
+                      Internal notes
+                      <ion-icon name="pencil"></ion-icon>
+                    </label>
+                    <textarea
+                      class="form-control i-text has-background has-shadow"
+                      id="exampleFormControlTextarea1"
+                      rows="2"
+                    ></textarea>
+                  </div>
+                  <!-- </div> -->
+
+                  <div class="form-check form-switch form-padding">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckChecked"
+                      checked
+                    />
+                    <label
+                      class="form-check-label check-text"
+                      for="flexSwitchCheckChecked"
+                      >This person is alive</label
+                    >
+                  </div>
+
                   <div class="text-end btn-padding">
                     <button
                       type="submit"
